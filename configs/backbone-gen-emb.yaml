@@ -1,0 +1,26 @@
+# @package _global_
+
+# specify here default configuration
+# order of defaults determines the order in which configs override each other
+defaults:
+  - _self_
+  - data: null
+  - model: null
+  - paths: default
+  - hydra: default
+  - trainer: gpu
+
+# task name, determines output directory path
+task_name: "backbone-gen-emb"
+
+# seed for random number generators in pytorch, numpy and python.random
+seed: null
+
+cls_only: False
+test_only: False
+cls: 'cls' # cls/mean/max/highnorm, cls: use cls token, mean: mean pooling, max: max pooling
+
+save_name: None
+append: False
+fast_fail: True
+limit: null

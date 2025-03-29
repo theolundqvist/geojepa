@@ -1,0 +1,16 @@
+defaults:
+  - model_checkpoint
+  - early_stopping
+  - model_summary
+  - stop_if_inf
+  - _self_
+
+model_checkpoint:
+  dirpath: ${paths.output_dir}/checkpoints
+  filename: "last"
+  monitor: "val/loss"
+  mode: "min"
+  save_last: True
+  save_top_k: 0
+  every_n_epochs: 10 # number of epochs between checkpoints
+  auto_insert_metric_name: False

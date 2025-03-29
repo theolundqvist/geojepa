@@ -1,0 +1,4 @@
+defaults:
+  - task
+
+dir: ${paths.data_dir}/tiles/huge/tasks/traffic_signals

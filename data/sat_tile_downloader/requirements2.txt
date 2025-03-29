@@ -1,0 +1,4 @@
+GDAL @ file:///Users/runner/miniforge3/conda-bld/libgdal-core_1728291226053/work/build/swig/python
+gdal2tiles==0.1.6
+mpi4py==4.0.0
+numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1728239947389/work/dist/numpy-2.1.2-cp313-cp313-macosx_10_13_x86_64.whl#sha256=583b3c408d835af48270b5584a955ad8fc03b1151995c8c01747b44068b1abb9

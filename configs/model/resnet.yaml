@@ -1,0 +1,10 @@
+defaults:
+  - regression_transfer
+
+cls_token: false
+selector:
+  _target_: src.modules.vision_backbones.ImageSelector
+backbone:
+  _target_: src.modules.vision_backbones.ResNet50
+head:
+  in_dim: 2048

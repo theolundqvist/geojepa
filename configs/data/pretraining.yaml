@@ -1,0 +1,5 @@
+defaults:
+  - task
+_target_: src.data.tiles_datamodule.TilesDataModule
+dir: ${paths.data_dir}/tiles/huge/tasks/pretraining
+load_images: true

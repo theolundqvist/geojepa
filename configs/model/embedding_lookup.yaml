@@ -1,0 +1,15 @@
+defaults:
+  - regression_transfer
+
+cls_token: false
+backbone:
+  _target_: src.modules.embedding_lookup.EmbeddingLookup
+  dir: data/embeddings/geojepa_m3_ti/pretraining_${data.size}
+  cls_only: true
+head:
+  in_dim: 384
+
+optimizer:
+  lr: 0.01
+  weight_decay: 0.001
+lr_min: 0.0001

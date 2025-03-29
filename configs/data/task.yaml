@@ -1,0 +1,11 @@
+_target_: src.data.task_datamodule.TaskDataModule
+# Needs to be divisible by the number of devices (e.g., if in a distributed setup)
+batch_size: 64
+size: huge
+cheat: false
+cache: false
+num_workers: 10
+group_size: 8
+pin_memory: false
+use_image_transforms: true
+load_images: false

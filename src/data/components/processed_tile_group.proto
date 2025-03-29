@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+message Feature {
+    repeated string tags = 1;     // (key, val) --  2 * number of tags
+    repeated float min_box = 2;   // (lat, lon) x 4
+    float area = 3;
+    float width = 4;
+    float height = 5;
+    float rotation = 6;
+    bool is_point = 7;
+    bool is_polyline = 8;
+    bool is_polygon = 9;
+    bool is_relation = 10; // these features may exist twice in the same tile, one in relation and one on their own
+}
+
+message Tile {
+    repeated float nodes = 1;               // (lat, lon) -- 2 * number of points
+    repeated int32 inter_edges = 2;         // (n1, n2)   -- 2 * number of inter_edges
+    repeated int32 intra_edges = 3;         // (n1, n2)   -- 2 * number of intra_edges
+    repeated int32 node_to_feature = 4;     // (fid, fid, fid, ...) -- number of nodes
+    repeated Feature features = 5;
+    int32 zoom = 10;
+    int32 x = 11;
+    int32 y = 12;
+}
+
+message TileGroup {
+    int32 zoom = 1;
+    int32 x = 2;
+    int32 y = 3;
+    repeated Tile tiles = 4;
+}

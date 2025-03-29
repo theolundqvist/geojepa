@@ -1,0 +1,27 @@
+# @package _global_
+
+defaults:
+  - override /callbacks: default
+  - override /trainer: gpu
+
+seed: 12345
+
+data:
+  batch_size: 64
+
+trainer:
+  max_epochs: 15
+  accumulate_grad_batches: 4
+
+#callbacks:
+#  early_stopping:
+#    monitor: "val/loss"
+#    patience: 4
+#    mode: "min"
+
+hydra:
+  mode: MULTIRUN
+  sweeper:
+    params:
+      model: efficientnet,resnet,vitb16,scalemae
+      data: bridge,car_bridge,max_speed,traffic_signals,building_count

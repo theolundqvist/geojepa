@@ -1,0 +1,184 @@
+Starting images task
+Starting task bridge
+Starting task bridge_cheat
+Starting task building_count
+Starting task building_count_cheat
+Traceback (most recent call last):
+  File "/home/theo/miniconda3/envs/geojepa/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/theo/miniconda3/envs/geojepa/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 293, in <module>
+    main()
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 245, in main
+    main_logger = setup_logger("build_h5_datasets.main", log_dir / "main.log")
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 50, in setup_logger
+    os.remove(log_file)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/theo/Documents/master-thesis/geojepa/pyscripts/logs/build_h5_all/main.log'
+Traceback (most recent call last):
+  File "/home/theo/miniconda3/envs/geojepa/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/theo/miniconda3/envs/geojepa/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 293, in <module>
+    main()
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 245, in main
+    main_logger = setup_logger("build_h5_datasets.main", log_dir / "main.log")
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 50, in setup_logger
+    os.remove(log_file)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/theo/Documents/master-thesis/geojepa/pyscripts/logs/build_h5_all/main.log'
+Traceback (most recent call last):
+  File "/home/theo/miniconda3/envs/geojepa/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/theo/miniconda3/envs/geojepa/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 293, in <module>
+    main()
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 245, in main
+    main_logger = setup_logger("build_h5_datasets.main", log_dir / "main.log")
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 50, in setup_logger
+    os.remove(log_file)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/theo/Documents/master-thesis/geojepa/pyscripts/logs/build_h5_all/main.log'
+Traceback (most recent call last):
+  File "/home/theo/miniconda3/envs/geojepa/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/theo/miniconda3/envs/geojepa/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 293, in <module>
+    main()
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 245, in main
+    main_logger = setup_logger("build_h5_datasets.main", log_dir / "main.log")
+  File "/home/theo/Documents/master-thesis/geojepa/pyscripts/build_h5_datasets.py", line 50, in setup_logger
+    os.remove(log_file)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/theo/Documents/master-thesis/geojepa/pyscripts/logs/build_h5_all/main.log'
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/medium
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: building_count_cheat
+Finished images task in 0 seconds
+Starting task car_bridge
+Finished task bridge in 0 seconds
+Finished task bridge_cheat in 0 seconds
+Starting task car_bridge_cheat
+Starting task max_speed
+Finished task building_count in 0 seconds
+Starting task max_speed_cheat
+INFO - Writing building_count_cheat/test
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/medium
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: car_bridge
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/medium
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: max_speed
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/medium
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: car_bridge_cheat
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/medium
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: max_speed_cheat
+INFO - Writing car_bridge/test
+INFO - Writing car_bridge_cheat/test
+INFO - Writing max_speed/test
+INFO - Writing max_speed_cheat/test
+INFO - Completed split 'test': 1246 tiles in 6.00s (207.82 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'medium/building_count_cheat/test.h5'.
+INFO - Writing building_count_cheat/train
+INFO - Completed split 'test': 1246 tiles in 6.13s (203.23 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'medium/max_speed_cheat/test.h5'.
+INFO - Completed split 'test': 1246 tiles in 6.34s (196.44 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'medium/car_bridge_cheat/test.h5'.
+INFO - Completed split 'test': 1246 tiles in 6.42s (194.22 tiles/s)
+INFO - Completed split 'test': 1246 tiles in 6.44s (193.36 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'medium/max_speed/test.h5'.
+INFO - All tiles for split 'test' have been successfully saved to 'medium/car_bridge/test.h5'.
+INFO - Writing max_speed_cheat/train
+INFO - Writing car_bridge_cheat/train
+INFO - Writing max_speed/train
+INFO - Writing car_bridge/train
+INFO - Completed split 'train': 10793 tiles in 48.74s (221.43 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'medium/building_count_cheat/train.h5'.
+INFO - Writing building_count_cheat/val
+INFO - Completed split 'train': 10793 tiles in 47.92s (225.24 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'medium/max_speed_cheat/train.h5'.
+INFO - Completed split 'train': 10793 tiles in 47.67s (226.39 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'medium/car_bridge/train.h5'.
+INFO - Completed split 'train': 10793 tiles in 47.91s (225.27 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'medium/car_bridge_cheat/train.h5'.
+INFO - Writing max_speed_cheat/val
+INFO - Writing car_bridge/val
+INFO - Writing car_bridge_cheat/val
+INFO - Completed split 'train': 10793 tiles in 49.39s (218.51 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'medium/max_speed/train.h5'.
+INFO - Writing max_speed/val
+INFO - Completed split 'val': 1383 tiles in 6.47s (213.63 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'medium/building_count_cheat/val.h5'.
+INFO - Completed build_h5 for task: building_count_cheat in 65.59s
+INFO - All build_h5 tasks have been processed in 65.69s
+Finished task building_count_cheat in 0 seconds
+Starting task pretraining
+INFO - Completed split 'val': 1383 tiles in 6.35s (217.89 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'medium/car_bridge/val.h5'.
+INFO - Completed build_h5 for task: car_bridge in 64.24s
+INFO - Completed split 'val': 1383 tiles in 6.44s (214.71 tiles/s)
+INFO - All build_h5 tasks have been processed in 64.32s
+INFO - All tiles for split 'val' have been successfully saved to 'medium/max_speed_cheat/val.h5'.
+INFO - Completed build_h5 for task: max_speed_cheat in 64.27s
+INFO - All build_h5 tasks have been processed in 64.36s
+INFO - Completed split 'val': 1383 tiles in 6.36s (217.41 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'medium/car_bridge_cheat/val.h5'.
+INFO - Completed build_h5 for task: car_bridge_cheat in 64.46s
+INFO - All build_h5 tasks have been processed in 64.55s
+Finished task car_bridge in 0 seconds
+Starting task traffic_signals
+Finished task max_speed_cheat in 0 seconds
+Starting task traffic_signals_cheat
+Finished task car_bridge_cheat in 0 seconds
+INFO - Completed split 'val': 1383 tiles in 5.74s (240.77 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'medium/max_speed/val.h5'.
+INFO - Completed build_h5 for task: max_speed in 65.62s
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/medium
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: pretraining
+INFO - All build_h5 tasks have been processed in 65.70s
+Finished task max_speed in 0 seconds
+INFO - Writing pretraining/test
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/medium
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: traffic_signals
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/medium
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: traffic_signals_cheat
+INFO - Writing traffic_signals/test
+INFO - Writing traffic_signals_cheat/test
+INFO - Completed split 'test': 1246 tiles in 5.19s (240.01 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'medium/pretraining/test.h5'.
+INFO - Writing pretraining/train
+INFO - Completed split 'test': 1246 tiles in 5.31s (234.79 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'medium/traffic_signals/test.h5'.
+INFO - Completed split 'test': 1246 tiles in 5.39s (231.33 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'medium/traffic_signals_cheat/test.h5'.
+INFO - Writing traffic_signals/train
+INFO - Writing traffic_signals_cheat/train
+INFO - Completed split 'train': 10793 tiles in 40.93s (263.71 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'medium/pretraining/train.h5'.
+INFO - Writing pretraining/val
+INFO - Completed split 'train': 10793 tiles in 40.41s (267.10 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'medium/traffic_signals_cheat/train.h5'.
+INFO - Completed split 'train': 10794 tiles in 40.95s (263.60 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'medium/traffic_signals/train.h5'.
+INFO - Writing traffic_signals_cheat/val
+INFO - Writing traffic_signals/val
+INFO - Completed split 'val': 1383 tiles in 5.80s (238.51 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'medium/pretraining/val.h5'.
+INFO - Completed build_h5 for task: pretraining in 55.43s
+INFO - All build_h5 tasks have been processed in 55.52s
+Finished task pretraining in 0 seconds
+INFO - Completed split 'val': 1383 tiles in 5.18s (267.00 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'medium/traffic_signals_cheat/val.h5'.
+INFO - Completed build_h5 for task: traffic_signals_cheat in 54.59s
+INFO - All build_h5 tasks have been processed in 54.66s
+INFO - Completed split 'val': 1383 tiles in 5.07s (272.92 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'medium/traffic_signals/val.h5'.
+INFO - Completed build_h5 for task: traffic_signals in 55.03s
+INFO - All build_h5 tasks have been processed in 55.10s
+Finished task traffic_signals_cheat in 0 seconds
+Finished task traffic_signals in 0 seconds

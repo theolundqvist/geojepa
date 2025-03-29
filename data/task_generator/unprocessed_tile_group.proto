@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package unprocessed;
+
+message Geometry {
+    message Point {
+        float lat = 1;
+        float lon = 2;
+    }
+    repeated Point points = 1;
+    bool is_closed = 2;            // Flag to indicate if the geometry is closed
+    bool inner = 3;                // Indicates whether polygon of multipolygon is inner or outer
+}
+
+message Feature { // Point, Polyline, Polygon
+    map<string, string> tags = 1;  // Key-value pairs for tags (map of strings)
+    Geometry geometry = 2;     // Variable number of points
+}
+
+message Group {
+    map<string, string> tags = 1;  // Key-value pairs for tags (map of strings)
+    repeated int32 feature_indices = 2; // Variable number of features in relation, either this or geometry
+}
+
+message Tile {
+    int32 zoom = 1;  // Zoom level for the tile
+    int32 x = 2;     // X-coordinate for the tile
+    int32 y = 3;     // Y-coordinate for the tile
+    repeated Feature features = 4;
+    repeated Group groups = 5;
+}
+
+message TileGroup {         // One file per TileGroup, name: z-x-y.pbf
+    int32 zoom = 1;
+    int32 x = 2;
+    int32 y = 3;
+    repeated Tile tiles = 4;
+}

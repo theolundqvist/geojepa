@@ -1,0 +1,8 @@
+defaults:
+  - default
+
+accelerator: gpu
+precision: 16-mixed
+devices: 1
+gradient_clip_val: 1.0
+accumulate_grad_batches: 1

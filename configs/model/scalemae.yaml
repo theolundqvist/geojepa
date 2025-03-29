@@ -1,0 +1,13 @@
+defaults:
+  - regression_transfer
+
+cls_token: true
+selector:
+  _target_: src.modules.vision_backbones.ImageSelector
+backbone:
+  _target_: src.modules.sat_img_encoder.SatImgEncoder
+  res: 1.33928571 # 300/224
+head:
+  in_dim: 1024
+
+

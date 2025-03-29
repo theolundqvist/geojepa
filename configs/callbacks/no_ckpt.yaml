@@ -1,0 +1,14 @@
+defaults:
+  - model_summary
+  - rich_progress_bar
+  - stop_if_inf
+  - _self_
+
+model_checkpoint:
+  dirpath: ${paths.output_dir}/checkpoints
+  filename: "best"
+  monitor: "val/loss"
+  mode: "min"
+  save_last: False
+  save_top_k: 0
+  auto_insert_metric_name: False

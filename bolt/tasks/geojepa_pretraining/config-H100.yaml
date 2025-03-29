@@ -1,0 +1,21 @@
+name: "geojepa_pretraining"
+tags: []
+setup_command: "bash setup.sh"
+command: "bash run.sh"
+
+project_id: playground #a project_id is needed for preemptible tier task
+scheduling_options:
+  tiers: preemptible # mandatory call for preemptible tier
+cluster_options:
+   aws:
+     instance_type: p5.48xlarge # H100
+
+resources:
+  docker_image: {DOCKER_IMAGE_CUDA_TOOLKIT}
+  cluster: "AWS_ALL"
+  task_type: 1gpu
+  timeout: 4d
+#  num_gpus: 1
+#  num_cpus: 12
+#  memory_gb: 135
+#  disk_gb: 250

@@ -1,0 +1,4 @@
+distances.txt
+test/*
+cmake-build*
+ag_output/*

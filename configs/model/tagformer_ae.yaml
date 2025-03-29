@@ -1,0 +1,15 @@
+_target_: src.models.autoencoder.AutoEncoder
+
+compile: false
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 1e-3
+  weight_decay: 5e-5
+lr_min: 1e-6
+
+model:
+  _target_: src.modules.tag_models.TagformerAE
+  embedding_file: data/tiles/embeddings.pkl
+  h_dim: 256

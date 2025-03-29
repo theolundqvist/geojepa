@@ -1,0 +1,23 @@
+# @package _global_
+
+defaults:
+  - override /model: tag_ae
+  - override /trainer: gpu
+  - override /data: pretraining
+
+trainer:
+  min_epochs: 0
+  max_epochs: 100
+  limit_val_batches: 0.35
+  #limit_train_batches: 0.3
+  #accumulate_grad_batches: 170 # 2048 effective batch size
+  accumulate_grad_batches: 10 # 640 effective batch size
+  gradient_clip_val: 10.0
+  log_every_n_steps: 64
+  devices: 1
+
+data:
+  batch_size: 32
+  group_size: 16
+  load_images: false
+  num_workers: 14

@@ -1,0 +1,15 @@
+test
+0:0.25
+building_count
+0:0.1
+max_speed
+0:0
+traffic_signals
+0:0.05
+bridge
+0:0.25
+car_bridge
+0:0.1
+
+
+

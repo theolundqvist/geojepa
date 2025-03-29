@@ -1,0 +1,17 @@
+huge/*
+!huge/logs/
+!huge/logs/*
+!huge/tasks/**/stats.txt
+large/*
+!large/logs/
+!large/logs/*
+!large/tasks/**/stats.txt
+small/*
+!small/tasks/**/labels.txt
+images
+!tiny
+tasks
+sat*
+protobuf
+all_sat.zip
+small_gpt

@@ -1,0 +1,13 @@
+defaults:
+  - regression_transfer
+
+cls_token: true
+selector:
+  _target_: src.modules.vision_backbones.ImageSelector
+backbone:
+  _target_: src.modules.vision_backbones.ViTB16
+head:
+  _target_: src.modules.mlp.MLP
+  in_dim: 768
+  hidden_dim: 256
+  out_dim: 1

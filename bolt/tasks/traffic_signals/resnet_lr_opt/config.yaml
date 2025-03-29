@@ -1,0 +1,27 @@
+name: "resnet_lr_opt_signals"
+tags: []
+setup_command: "bash setup.sh"
+command: "bash run.sh"
+
+#project_id: playground #a project_id is needed for preemptible tier task
+#scheduling_options:
+#  tiers: preemptible # mandatory call for preemptible tier
+#cluster_options:
+#   aws:
+#     instance_type: p4d.24xlarge # A100
+
+resources:
+  docker_image: {DOCKER_IMAGE_CUDA_TOOLKIT}
+  #cluster: "AWS_ALL"
+  task_type: 1gpu
+  num_gpus: 1
+  num_cpus: 12
+  memory_gb: 135
+  disk_gb: 100
+#  num_gpus: 1
+#  num_cpus: 32
+#  memory_gb: 80
+#  disk_gb: 75
+#  num_cpus: 4
+#  memory_gb: 8
+#  disk_gb: 50

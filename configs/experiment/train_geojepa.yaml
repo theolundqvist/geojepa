@@ -1,0 +1,50 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /logger: tensorboard
+  - override /data: pretraining
+  - override /model: geojepa
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+seed: 12345
+
+trainer:
+  #max_epochs: 40
+  min_epochs: 0
+  max_epochs: 10
+  limit_val_batches: 0.4
+  #accumulate_grad_batches: 170 # 2048 effective batch size
+  accumulate_grad_batches: 32 # 2048 effective batch size
+  gradient_clip_val: 10.0
+  log_every_n_steps: 64
+
+optimizer:
+  lr: 5e-4
+
+
+data:
+  batch_size: 12
+  group_size: 16
+  load_images: false
+  num_workers: 10
+
+
+model:
+  token_dim: 256
+  predictor:
+    predictor_dim: 128
+    num_heads: 8
+  compile: true
+  tokenizer:
+    tokenize_images: false
+    tokenize_tags: true
+    tokenize_geometry: false
+
+#  train_encoders_lr_modifier:
+#    img: 0.1
+#    tag: 0.1

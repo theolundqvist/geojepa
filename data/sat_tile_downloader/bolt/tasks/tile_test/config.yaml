@@ -1,0 +1,23 @@
+name: "tile_Test"
+tags: []
+setup_command: "bash setup.sh"
+command: "bash run.sh"
+
+# project_id: playground #a project_id is needed for preemptible tier task
+# scheduling_options:
+#   tiers: preemptible # mandatory call for preemptible tier
+# cluster_options:
+#     aws:
+#       instance_type: p4d.24xlarge # A100
+
+resources:
+  docker_image: {DOCKER_IMAGE_CUDA_TOOLKIT}
+  #task_type: 1gpu
+  # cluster: aws_3
+  num_gpus: 0
+  num_cpus: 2
+  memory_gb: 8
+  disk_gb: 50
+#  num_cpus: 4
+#  memory_gb: 8
+#  disk_gb: 50

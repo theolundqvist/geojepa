@@ -1,0 +1,133 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /logger: tensorboard
+  - override /data: pretraining
+  - override /trainer: gpu
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+seed: 12345
+
+
+trainer:
+  #max_epochs: 40
+  min_epochs: 0
+  max_epochs: 250
+  #max_epochs: 1
+  limit_val_batches: 0.35
+  accumulate_grad_batches: 6 # 672 effective batch size
+  gradient_clip_val: 10.0
+  log_every_n_steps: 64
+  devices: 1
+
+data:
+  batch_size: 112
+  group_size: 12
+  load_images: false
+  num_workers: 10
+
+
+model:
+  _target_: src.models.jepa.JEPA
+  token_dim: 384
+  loss_beta: 2
+  compile: true
+  tokenizer:
+    _target_: src.modules.tokenizer.TileTokenizer
+    token_dim: ${model.token_dim}
+    tag_embedding_file: ${paths.data_dir}/tiles/embeddings.pkl
+    sort_spatially: false
+    tokenize_images: false
+    tokenize_tags: true
+    tokenize_geometry: false
+
+    # not used in tokenizer
+    geometry_encoder:
+      _target_: src.modules.geometry_encoder.load_geometry_encoder_pretrained
+      model_path: src/models/pretrained/polygnn-ckpt-dec-26
+    geometry_encoder_out_dim: 1024
+    img_encoder_selector:
+      _target_: src.modules.vision_backbones.ImageSelector
+    img_encoder:
+      _target_: src.modules.vision_backbones.ViTB16
+  #       ----------
+
+  # -------------------
+  # unfreeze geometry encoder after 75% of training
+  #  unfreeze_after: 0.75
+  #
+  #  train_encoders_lr_modifier:
+  #    #img: 0.5
+  #    geometry: 1.0
+  #--------------------
+
+  warmup_fraction: 0.10
+  lr_min: 1e-6
+  weight_decay_start: 0.04
+  weight_decay_end: 0.1
+  optimizer:
+    _target_: torch.optim.AdamW
+    _partial_: true
+    lr: 1e-3
+    weight_decay: ${model.weight_decay_start}
+
+  ema_strategy:
+    _target_: src.modules.linear_ema.LinearEMA
+    _partial_: true
+    momentum_start: 0.993
+    momentum_end: 0.999999
+
+  masking_strategies:
+    random:
+      _target_: src.modules.masks.RandomMask
+      target_size: 0.45
+      num_targets: 4
+      min_context: 0.10
+    contiguous:
+      _target_: src.modules.masks.ContiguousMask
+      target_size: 0.25
+      num_targets: 4
+      min_context: 0.15
+    modality:
+      _target_: src.modules.masks.ModalityMask
+      min_context: 0.15
+    area:
+      _target_: src.modules.masks.AreaMask
+      target_size: .35
+      min_ar: .5
+      max_ar: 2
+      num_targets: 4
+      min_context: 0.15
+
+  masking_strategy_chances:
+    random: 0.25
+    area: 0.75
+    #---------
+    #random: 0.15
+    #contiguous: 0.15
+  #    contiguous: 0.0
+  #    modality: 0.25
+
+  use_concat_pos_and_mod: true
+
+  encoder:
+    _target_: src.modules.encoder.Encoder
+    token_dim: ${model.token_dim}
+    depth: 12
+    num_heads: 8
+    dropout: 0.1
+    #num_register_tokens: 2
+
+  predictor:
+    _target_: src.modules.predictor.CrossPredictor
+    token_dim: ${model.token_dim}
+    predictor_dim: 256
+    depth: 3
+    num_heads: 8
+    dropout: 0.1
+    #num_register_tokens: 2

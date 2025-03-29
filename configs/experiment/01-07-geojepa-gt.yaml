@@ -1,0 +1,128 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /logger: tensorboard
+  - override /data: pretraining
+  - override /trainer: gpu
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+seed: 12345
+
+trainer:
+  min_epochs: 0
+  max_epochs: 300
+  limit_val_batches: 0.35
+  limit_train_batches: 1.0
+  accumulate_grad_batches: 4 # 576 effective batch size
+  gradient_clip_val: 10.0
+  log_every_n_steps: 64
+  devices: 1
+
+data:
+  batch_size: 96
+  group_size: 4
+  load_images: false
+  num_workers: 6
+
+model:
+  _target_: src.models.geojepa.GEOJEPA
+
+  token_dim: 384
+  compile: true
+  log_images: true
+  log_image_interval: 5
+
+  momentum_init: 0.997
+  momentum_end: 0.99999
+  use_augmentations: true
+
+  #----------
+  # optimizer
+  warmup_frac: 0.10
+  lr_base: 1e-3
+  lr_end: 1e-6
+  wd_init: 0.04
+  wd_end: 0.4
+  adam_beta1: 0.9
+  adam_beta2: 0.95
+
+  #----------
+  # loss
+  vicreg_beta: 0.02
+  smooth_l1_beta: 2.0
+  #  target_sim_init: 0.75
+  #  target_sim_end: 0.25
+  #  info_nce_tau: 0.2
+  #  avg_sim_coeff: 0.1
+
+
+  encoder:
+    _target_: src.modules.encoder.Encoder
+    token_dim: ${model.token_dim}
+    depth: 12
+    num_heads: 8
+    dropout: 0.1
+    num_register_tokens: 2
+
+  predictor:
+    _target_: src.modules.predictor.Predictor
+    token_dim: ${model.token_dim}
+    use_mlp_projector: true
+    predictor_dim: 192
+    depth: 4
+    num_heads: 8
+    dropout: 0.1
+    num_register_tokens: 2
+
+  tokenizer:
+    _target_: src.modules.tokenizer.TileTokenizer
+    token_dim: ${model.token_dim}
+    tag_embedding_file: ${paths.data_dir}/tiles/embeddings.pkl
+    return_indices: false
+    sort_spatially: false
+    tokenize_images: false
+    tokenize_tags: true
+    tokenize_geometry: true
+    geometry_encoder:
+      _target_: src.modules.geometry_encoder.load_geometry_encoder_pretrained
+      model_path: src/models/pretrained/polygnn-ckpt-dec-26
+    geometry_encoder_out_dim: 1024
+    img_encoder_selector:
+      _target_: torch.nn.Identity
+    img_encoder:
+      _target_: src.modules.embedding_lookup.EmbeddingLookup
+      dir: data/embeddings/vitb16/pretraining_${data.size}
+    img_encoder_out_dim: 768
+
+  masking_strategies:
+    random:
+      _target_: src.modules.masks.RandomMask
+      target_size: 0.45
+      num_targets: 4
+      min_context: 0.10
+    #    contiguous:
+    #      _target_: src.modules.masks.ContiguousMask
+    #      target_size: 0.25
+    #      num_targets: 4
+    #      min_context: 0.15
+    modality:
+      _target_: src.modules.masks.ModalityMask
+      min_context: 0.15
+    area:
+      _target_: src.modules.masks.AreaMask
+      target_size: .35
+      min_ar: .5
+      max_ar: 2
+      num_targets: 4
+      min_context: 0.15
+
+  masking_strategy_chances:
+    random: 0.25
+    area: 0.75
+    #modality: 0.2
+

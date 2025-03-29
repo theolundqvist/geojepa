@@ -1,0 +1,17 @@
+
+# =============================================================================
+# Automatically generated. Do not modify directly.
+# Use the corresponding Python script (submit_experiment.py) to regenerate if necessary.
+# =============================================================================
+name: "transfer_efficientnet"
+tags: []
+setup_command: "bash setup.sh"
+command: "bash run.sh"
+
+resources:
+  docker_image: {DOCKER_IMAGE_CUDA_TOOLKIT}
+  task_type: 1gpu
+  num_gpus: 1
+  num_cpus: 10
+  memory_gb: 90
+  disk_gb: 100

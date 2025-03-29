@@ -1,0 +1,113 @@
+_target_: src.models.jepa.JEPA
+
+token_dim: 384
+
+# compile model for faster training with pytorch 2.0
+compile: false
+
+loss_beta: 2
+warmup_fraction: 0.10
+
+lr_min: 1e-6
+weight_decay_start: 0.02
+weight_decay_end: 0.4
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 1e-3
+  weight_decay: 0.05
+
+ema_strategy:
+  _target_: src.modules.linear_ema.LinearEMA
+  _partial_: true
+  # T_JEPA
+  #model_influence_start: 0.004
+  model_influence_start: 0.005
+  model_influence_end: 0.0
+  # PointJEPA
+#  model_influence_start: 0.0005
+#  model_influence_end: 0.00001
+  update_after_step: 0
+  update_every: 1
+
+tokenizer:
+  _target_: src.modules.tokenizer.TileTokenizer
+  token_dim: ${model.token_dim}
+  tag_embedding_file: ${paths.data_dir}/tiles/embeddings.pkl
+  tokenize_geometry: false
+  tokenize_tags: true
+  tokenize_images: true
+#  geometry_encoder:
+#    _target_: src.modules.geometry_encoder.load_geometry_encoder_pretrained
+#    model_path: src/models/pretrained/polygnn-ckpt-oct-01
+  geometry_encoder_out_dim: 2048
+  img_encoder_selector:
+    _target_: torch.nn.Identity
+    #_target_: src.modules.vision_backbones.ImageSelector
+  img_encoder:
+    _target_: src.modules.embedding_lookup.EmbeddingLookup
+    dir: data/embeddings/vitb16/pretraining_${data.size}
+  #  img_encoder:
+  #    _target_: src.modules.vision_backbones.ViTB16
+  img_encoder_out_dim: 768
+
+masking_strategies:
+  random:
+    _target_: src.modules.masks.RandomMask
+    target_size: 0.25
+    num_targets: 4
+    min_context: 0.15
+  contiguous:
+    _target_: src.modules.masks.ContiguousMask
+    target_size: 0.25
+    num_targets: 4
+    min_context: 0.15
+  modality:
+    _target_: src.modules.masks.ModalityMask
+    min_context: 0.15
+  area:
+    _target_: src.modules.masks.AreaMask
+    target_size: 0.25
+    min_ar: 0.66
+    max_ar: 1.5
+    num_targets: 4
+    min_context: 0.15
+
+masking_strategy_chances:
+  #  random: 0.20
+  #  contiguous: 0.30
+  #  modality: 0.50
+  #-----
+  #  random: 0.60
+  #  contiguous: 0.0
+  #  modality: 0.40
+  #---------
+  random: 0.15
+  contiguous: 0.15
+  modality: 0.25
+  area: 0.45
+
+position_encoder:
+  _target_: src.modules.mlp.MLP
+  in_dim: 8
+  hidden_dim: 512
+  out_dim: ${model.token_dim}
+  drop: 0.1
+
+encoder:
+  _target_: src.modules.encoder.Encoder
+  token_dim: ${model.token_dim}
+  depth: 12
+  num_heads: 8
+  dropout: 0.1
+  num_register_tokens: 2
+
+predictor:
+  _target_: src.modules.predictor.Predictor
+  token_dim: ${model.token_dim}
+  predictor_dim: 192
+  depth: 6
+  num_heads: 6
+  dropout: 0.1
+  num_register_tokens: 2

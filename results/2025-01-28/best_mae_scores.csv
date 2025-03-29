@@ -1,0 +1,756 @@
+size,dataset,model,best_mae,training_time,lr,lr_min,weight_decay,date,config
+huge,bridge,Tagformer-P,0.03166782483458519,11m 40s,0.0067051824202799225,7.514175711585728e-05,0.0009645500052158861,2025-01-10,remote-logs/logs/train/2025-01-10/22-35-30_tagformer_lr_opt_tagformer/2_tagformer_bridge_cheat/hydra/config.yaml
+huge,bridge,TagCountMLP,0.04747753217816353,8m 37s,0.00993555570945232,4.232066549034979e-05,3.757194952815567e-06,2025-01-11,remote-logs/logs/train/2025-01-11/01-01-36_lr_opt_tagcountencoder/7_tagcountencoder_bridge_cheat/hydra/config.yaml
+huge,bridge,Tagformer,0.05028049275279045,24m 38s,0.007362158568200267,4.232066549034979e-05,6.153481869307321e-06,2025-01-10,remote-logs/logs/train/2025-01-10/18-21-10_tagformer_lr_opt_tagformer/7_tagformer_bridge_cheat/hydra/config.yaml
+huge,bridge,Tagformer-S,0.06366904079914093,37m 38s,0.0058933877762760226,5.995892559494591e-05,0.00020535571827448668,2025-01-10,remote-logs/logs/train/2025-01-10/10-29-24_tagformer_lr_opt_tagformer/1_tagformer_bridge_cheat/hydra/config.yaml
+huge,bridge,Tagformer-SP,0.06599098443984985,39m 30s,0.009579917154264024,9.655045506171441e-05,0.0005256784982658407,2025-01-10,remote-logs/logs/train/2025-01-10/13-39-06_tagformer_lr_opt_tagformer/4_tagformer_bridge_cheat/hydra/config.yaml
+huge,bridge,TagPool-MLP,0.09941065311431885,2m 24s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/entity_tag_avg/entity_tag_avg_mlpc/hydra/config.yaml
+huge,bridge,TagPool-LIN,0.11553430557250977,2m 18s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/bridge/entity_tag_avg/entity_tag_avg_linc/hydra/config.yaml
+huge,bridge,(M) Tagformer-P,0.13346436619758606,29m 7s,0.0006351152427934166,3.1115449545867236e-05,0.000613718392498594,2025-01-11,remote-logs/logs/train/2025-01-11/12-29-35_tagformer_lr_opt_tagformer/6_tagformer_bridge/hydra/config.yaml
+huge,bridge,(M) Tagformer-SP,0.13711591064929962,30m 58s,0.0006968505158804541,2.1885413500596173e-06,0.00047092856097572216,2025-01-11,remote-logs/logs/train/2025-01-11/06-24-43_tagformer_lr_opt_tagformer/5_tagformer_bridge/hydra/config.yaml
+huge,bridge,(M) Tagformer,0.1564749777317047,26m 51s,0.0015662542587867056,3.3801309645904495e-05,0.00034353488344376535,2025-01-11,remote-logs/logs/train/2025-01-11/09-43-28_tagformer_lr_opt_tagformer/7_tagformer_bridge/hydra/config.yaml
+huge,bridge,TagformerLMAE-MLP,0.16535083949565887,1m 56s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/bridge/tagformer_lmae/tagformer_lmae_mlpc/hydra/config.yaml
+huge,bridge,geojepa_t_jan06-T-MLP,0.1732458621263504,2m 24s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan06/geojepa_t_jan06_mlpc/hydra/config.yaml
+huge,bridge,(M) Tagformer-S,0.17501282691955566,33m 42s,0.0006325206371948675,1.011065130414658e-05,0.00010687075402008851,2025-01-11,remote-logs/logs/train/2025-01-11/02-30-12_tagformer_lr_opt_tagformer/6_tagformer_bridge/hydra/config.yaml
+huge,bridge,(M) TagPool-MLP,0.18165528774261475,1m 35s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/bridge/entity_tag_avg_masked_bridge/entity_tag_avg_masked_bridge_mlpc/hydra/config.yaml
+huge,bridge,geojepa_t_e2-T-MLP,0.1825864613056183,2m 0s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e2/geojepa_t_e2_mlpc/hydra/config.yaml
+huge,bridge,geojepa_t_e1-T-MLP,0.18914711475372314,0m 34s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e1/geojepa_t_e1_mlpc/hydra/config.yaml
+huge,bridge,geojepa_t_jan06-T-LIN,0.189703106880188,2m 20s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan06/geojepa_t_jan06_linc/hydra/config.yaml
+huge,bridge,geojepa_t_e1-T-LIN,0.192705437541008,1m 58s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e1/geojepa_t_e1_linc/hydra/config.yaml
+huge,bridge,(M) geojepa_t_e1-T-MLP,0.19453465938568115,0m 37s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/bridge/geojepa_t_e1_masked_bridge/geojepa_t_e1_masked_bridge_mlpc/hydra/config.yaml
+huge,bridge,(M) geojepa_t_e1-T-LIN,0.1946466565132141,1m 21s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/bridge/geojepa_t_e1_masked_bridge/geojepa_t_e1_masked_bridge_linc/hydra/config.yaml
+huge,bridge,geojepa_t_300e_jan13-T-MLP,0.19837652146816254,2m 6s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/bridge/geojepa_t_300e_jan13/geojepa_t_300e_jan13_mlpc/hydra/config.yaml
+huge,bridge,geojepa_t_jan12_150e-T-MLP,0.20060047507286072,1m 59s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/bridge/geojepa_t_jan12_150e/geojepa_t_jan12_150e_mlpc/hydra/config.yaml
+huge,bridge,(M) TagPool-LIN,0.20159032940864563,3m 35s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/entity_tag_avg_masked_bridge/entity_tag_avg_masked_bridge_linc/hydra/config.yaml
+huge,bridge,geojepa_t_e3-T-MLP,0.20538197457790375,0m 36s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e3/geojepa_t_e3_mlpc/hydra/config.yaml
+huge,bridge,geojepa_gt_300e-GT-MLP,0.21027466654777527,0m 34s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_gt_300e/geojepa_gt_300e_mlpc/hydra/config.yaml
+huge,bridge,geojepa_t_e2-T-LIN,0.21049706637859344,1m 57s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e2/geojepa_t_e2_linc/hydra/config.yaml
+huge,bridge,geojepa_gt_300e_small_b-GT-MLP,0.21238741278648376,0m 41s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_mlpc/hydra/config.yaml
+huge,bridge,(M) TagCountMLP,0.21249128878116608,8m 34s,0.007603290688077101,9.616936687120932e-05,0.0006539163009808837,2025-01-11,remote-logs/logs/train/2025-01-11/15-05-26_lr_opt_tagcountencoder/3_tagcountencoder_bridge/hydra/config.yaml
+huge,bridge,TagformerLMAE-LIN,0.21627932786941528,1m 7s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/bridge/tagformer_lmae_100e/tagformer_lmae_100e_linc/hydra/config.yaml
+huge,bridge,geojepa_t_e3-T-LIN,0.2169465273618698,1m 39s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e3/geojepa_t_e3_linc/hydra/config.yaml
+huge,bridge,(M) geojepa_t_300e_jan13-T-MLP,0.21827752888202667,0m 38s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/bridge/geojepa_t_300e_jan13_masked_bridge/geojepa_t_300e_jan13_masked_bridge_mlpc/hydra/config.yaml
+huge,bridge,geojepa_t_jan12_150e-T-LIN,0.21839208900928497,1m 55s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/bridge/geojepa_t_jan12_150e/geojepa_t_jan12_150e_linc/hydra/config.yaml
+huge,bridge,geojepa_t_jan04-T-MLP,0.22072723507881165,0m 24s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan04/geojepa_t_jan04_mlpc/hydra/config.yaml
+huge,bridge,geojepa_gt_300e-GT-LIN,0.22272878885269165,1m 56s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/bridge/geojepa_gt_300e/geojepa_gt_300e_linc/hydra/config.yaml
+huge,bridge,geojepa_t_300e_jan13-T-LIN,0.223173588514328,2m 30s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/bridge/geojepa_t_300e_jan13/geojepa_t_300e_jan13_linc/hydra/config.yaml
+huge,bridge,geojepa_gt_300e_small_b-GT-LIN,0.22484154999256134,1m 31s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_linc/hydra/config.yaml
+huge,bridge,(M) geojepa_t_300e_jan13-T-LIN,0.22902901470661163,1m 54s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/bridge/geojepa_t_300e_jan13_masked_bridge/geojepa_t_300e_jan13_masked_bridge_linc/hydra/config.yaml
+huge,bridge,TagAE-MLP,0.2324029803276062,2m 29s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/bridge/tag_ae_dec_28/tag_ae_dec_28_mlpc/hydra/config.yaml
+huge,bridge,-TI-MLP,0.23729568719863892,0m 42s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_ti_jan06/geojepa_ti_jan06/_mlpc/hydra/config.yaml
+huge,bridge,geojepa_ti_jan14_300e-TI-MLP,0.24096520245075226,2m 6s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_mlpc/hydra/config.yaml
+huge,bridge,-TI-LIN,0.24107639491558075,1m 15s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_ti_jan06/geojepa_ti_jan06/_linc/hydra/config.yaml
+huge,bridge,geojepa_ti_jan12_100e-TI-LIN,0.24118760228157043,1m 56s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/bridge/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_linc/hydra/config.yaml
+huge,bridge,geojepa_ti_jan06-TI-LIN,0.2416323870420456,2m 14s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_ti_jan06/geojepa_ti_jan06_linc/hydra/config.yaml
+huge,bridge,geojepa_gti_170e-GTI-LIN,0.24174357950687408,1m 59s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/geojepa_gti_170e/geojepa_gti_170e_linc/hydra/config.yaml
+huge,bridge,geojepa_gti_dec30-GTI-MLP,0.2426331639289856,0m 41s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_gti_dec30/geojepa_gti_dec30_mlpc/hydra/config.yaml
+huge,bridge,geojepa_t_jan04-T-LIN,0.24274437129497528,1m 38s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan04/geojepa_t_jan04_linc/hydra/config.yaml
+huge,bridge,geojepa_ti_jan06-TI-MLP,0.24374514818191528,2m 6s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_ti_jan06/geojepa_ti_jan06_mlpc/hydra/config.yaml
+huge,bridge,geojepa_ti_jan12_100e-TI-MLP,0.24407874047756195,2m 0s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/bridge/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_mlpc/hydra/config.yaml
+huge,bridge,geojepa_gti_300e-GTI-LIN,0.24507951736450195,1m 13s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/bridge/geojepa_gti_300e/geojepa_gti_300e_linc/hydra/config.yaml
+huge,bridge,geojepa_ti_jan14_300e-TI-LIN,0.24585789442062378,2m 10s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_linc/hydra/config.yaml
+huge,bridge,ViT-B/16-LIN,0.24808184802532196,2m 12s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/vitb16/vitb16_linc/hydra/config.yaml
+huge,bridge,geojepa_gti_dec30-GTI-LIN,0.24808184802532196,2m 4s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_gti_dec30/geojepa_gti_dec30_linc/hydra/config.yaml
+huge,bridge,geojepa_gti_300e-GTI-MLP,0.24997220933437347,0m 45s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/bridge/geojepa_gti_300e/geojepa_gti_300e_mlpc/hydra/config.yaml
+huge,bridge,geojepa_gti_170e-GTI-MLP,0.25208497047424316,2m 3s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/geojepa_gti_170e/geojepa_gti_170e_mlpc/hydra/config.yaml
+huge,bridge,ScaleMAE-MLP,0.25219616293907166,2m 33s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/scalemae/scalemae_mlpc/hydra/config.yaml
+huge,bridge,ScaleMAE-LIN,0.253085732460022,2m 24s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/scalemae/scalemae_linc/hydra/config.yaml
+huge,bridge,-T-LIN,0.2602023780345917,0m 42s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_linc/hydra/config.yaml
+huge,bridge,-T-MLP,0.260647177696228,0m 16s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_mlpc/hydra/config.yaml
+huge,bridge,TagAE-LIN,0.2629823386669159,1m 52s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/tag_ae_dec_28/tag_ae_dec_28_linc/hydra/config.yaml
+huge,bridge,ViT-B/16-MLP,0.2657622694969177,0m 14s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/vitb16/vitb16_mlpc/hydra/config.yaml
+huge,bridge,AG-97M-600s,0.31028807163238525,12m 18s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/bridge/high-600s/hydra/config.yaml
+huge,bridge,Dummy,0.32,,,,,2025-01-12,remote-logs/baselines/bridge/hydra/config.yaml
+huge,bridge,ViT-B/16,0.32494020462036133,2m 33s,0.009964614669997835,9.515962290251638e-05,0.0021997515008536214,2025-01-03,remote-logs/logs/train/2025-01-03/12-49-13_lr_opt_embedding_lookup/4_embedding_lookup_bridge_cheat/hydra/config.yaml
+huge,bridge,ResNet-MLP,0.3314800560474396,2m 51s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/resnet/resnet_mlpc/hydra/config.yaml
+huge,bridge,ResNet-LIN,0.3314800560474396,2m 45s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/resnet/resnet_linc/hydra/config.yaml
+huge,bridge,EfficientNet-MLP,0.3314800560474396,2m 36s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/efficientnet/efficientnet_mlpc/hydra/config.yaml
+huge,bridge,EfficientNet-LIN,0.3314800560474396,2m 31s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/efficientnet/efficientnet_linc/hydra/config.yaml
+huge,bridge,cheat_tagformer_ae-MLP,0.3314800560474396,0m 21s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/bridge/tagformer_ae/tagformer_ae_mlpc/hydra/config.yaml
+huge,bridge,cheat_tagformer_ae-LIN,0.3314800560474396,0m 20s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/bridge/tagformer_ae/tagformer_ae_linc/hydra/config.yaml
+huge,bridge,AG-197M-3600s,0.33495089411735535,65m 33s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/bridge/best-3600s/hydra/config.yaml
+huge,bridge,AG-4M-900s,0.35943734645843506,15m 46s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/bridge/medium-900s/hydra/config.yaml
+huge,bridge,AG-4M-600s,0.3924409747123718,10m 47s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/bridge/medium-600s/hydra/config.yaml
+huge,building_count,Tagformer-S,1.163391351699829,34m 12s,0.0006351152427934166,3.92399409164446e-05,0.000398389144369163,2025-01-09,remote-logs/logs/train/2025-01-09/09-05-17_tagformer_lr_opt_tagformer/6_tagformer_building_count_cheat/hydra/config.yaml
+huge,building_count,Tagformer-SP,1.9298267364501953,12m 47s,0.003985728865950683,6.853667630355326e-05,0.0022777614712415468,2025-01-06,remote-logs/logs/train/2025-01-06/16-11-57_tagformer_lr_opt_tagformer/8_tagformer_building_count_cheat/hydra/config.yaml
+huge,building_count,Tagformer-P,2.264909029006958,11m 5s,0.006023409634975684,5.4761827229765204e-05,0.0006378130861495021,2025-01-06,remote-logs/logs/train/2025-01-06/18-50-50_tagformer_lr_opt_tagformer/7_tagformer_building_count_cheat/hydra/config.yaml
+huge,building_count,geojepa_ti_jan06-TI-MLP,2.924855947494507,2m 49s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_ti_jan06/geojepa_ti_jan06_mlpr/hydra/config.yaml
+huge,building_count,-TI-MLP,2.9472646713256836,2m 35s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_ti_jan06/geojepa_ti_jan06/_mlpr/hydra/config.yaml
+huge,building_count,TagAE-MLP,3.858043670654297,2m 34s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/tag_ae_dec_28/tag_ae_dec_28_mlpr/hydra/config.yaml
+huge,building_count,geojepa_ti_jan12_100e-TI-MLP,4.022921085357666,2m 18s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/building_count/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_mlpr/hydra/config.yaml
+huge,building_count,geojepa_gti_170e-GTI-MLP,4.132004737854004,2m 20s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/geojepa_gti_170e/geojepa_gti_170e_mlpr/hydra/config.yaml
+huge,building_count,geojepa_gt_300e_small_b-GT-MLP,4.194794178009033,2m 17s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_mlpr/hydra/config.yaml
+huge,building_count,geojepa_gti_300e-GTI-MLP,4.399147987365723,1m 54s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/building_count/geojepa_gti_300e/geojepa_gti_300e_mlpr/hydra/config.yaml
+huge,building_count,geojepa_t_jan04-T-MLP,4.578561305999756,2m 44s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan04/geojepa_t_jan04_mlpr/hydra/config.yaml
+huge,building_count,geojepa_gt_300e-GT-MLP,4.9134345054626465,2m 19s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_gt_300e/geojepa_gt_300e_mlpr/hydra/config.yaml
+huge,building_count,geojepa_ti_jan14_300e-TI-MLP,5.129953861236572,2m 22s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_mlpr/hydra/config.yaml
+huge,building_count,Tagformer,5.270987510681152,10m 30s,0.004025090616672401,6.853667630355326e-05,0.0010722281521696208,2025-01-06,remote-logs/logs/train/2025-01-06/17-15-38_tagformer_lr_opt_tagformer/8_tagformer_building_count_cheat/hydra/config.yaml
+huge,building_count,TagformerLMAE-MLP,5.43134880065918,1m 42s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/building_count/tagformer_lmae_100e/tagformer_lmae_100e_mlpr/hydra/config.yaml
+huge,building_count,geojepa_gti_dec30-GTI-MLP,5.9443840980529785,2m 38s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_gti_dec30/geojepa_gti_dec30_mlpr/hydra/config.yaml
+huge,building_count,geojepa_t_e3-T-MLP,6.039045333862305,2m 17s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e3/geojepa_t_e3_mlpr/hydra/config.yaml
+huge,building_count,geojepa_t_e2-T-MLP,6.4011359214782715,2m 18s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e2/geojepa_t_e2_mlpr/hydra/config.yaml
+huge,building_count,geojepa_t_e1-T-MLP,6.637978553771973,2m 19s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e1/geojepa_t_e1_mlpr/hydra/config.yaml
+huge,building_count,geojepa_t_300e_jan13-T-MLP,7.061119556427002,2m 58s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/building_count/geojepa_t_300e_jan13/geojepa_t_300e_jan13_mlpr/hydra/config.yaml
+huge,building_count,geojepa_t_jan06-T-MLP,7.130038261413574,2m 47s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan06/geojepa_t_jan06_mlpr/hydra/config.yaml
+huge,building_count,TagPool-MLP,7.150013446807861,2m 45s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/entity_tag_avg/entity_tag_avg_mlpr/hydra/config.yaml
+huge,building_count,geojepa_t_jan12_150e-T-MLP,7.518048286437988,2m 15s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/building_count/geojepa_t_jan12_150e/geojepa_t_jan12_150e_mlpr/hydra/config.yaml
+huge,building_count,geojepa_ti_jan06-TI-LIN,8.172839164733887,2m 30s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_ti_jan06/geojepa_ti_jan06_linr/hydra/config.yaml
+huge,building_count,-TI-LIN,8.18980598449707,2m 42s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_ti_jan06/geojepa_ti_jan06/_linr/hydra/config.yaml
+huge,building_count,TagCountMLP,8.625247955322266,4m 22s,0.006570341721432181,7.729433283441465e-05,0.002883958901482391,2025-01-06,remote-logs/logs/train/2025-01-06/20-19-12_lr_opt_tagcountencoder/3_tagcountencoder_building_count_cheat/hydra/config.yaml
+huge,building_count,geojepa_ti_jan12_100e-TI-LIN,9.841215133666992,2m 13s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/building_count/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_linr/hydra/config.yaml
+huge,building_count,-T-MLP,10.564359664916992,1m 50s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_mlpr/hydra/config.yaml
+huge,building_count,geojepa_gti_300e-GTI-LIN,10.72698974609375,2m 19s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/building_count/geojepa_gti_300e/geojepa_gti_300e_linr/hydra/config.yaml
+huge,building_count,geojepa_ti_jan14_300e-TI-LIN,11.121811866760254,2m 26s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_linr/hydra/config.yaml
+huge,building_count,geojepa_gti_170e-GTI-LIN,11.377748489379883,2m 16s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/geojepa_gti_170e/geojepa_gti_170e_linr/hydra/config.yaml
+huge,building_count,geojepa_t_jan04-T-LIN,12.71162223815918,2m 51s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan04/geojepa_t_jan04_linr/hydra/config.yaml
+huge,building_count,geojepa_gti_dec30-GTI-LIN,13.144126892089844,2m 51s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_gti_dec30/geojepa_gti_dec30_linr/hydra/config.yaml
+huge,building_count,(M) Tagformer,13.445240020751953,6m 37s,0.0028347264176566394,3.2951277968201005e-05,0.0026586792836830004,2025-01-06,remote-logs/logs/train/2025-01-06/23-09-56_tagformer_lr_opt_tagformer/5_tagformer_building_count/hydra/config.yaml
+huge,building_count,(M) Tagformer-P,13.514533042907715,6m 29s,0.0028347264176566394,3.2951277968201005e-05,0.0026586792836830004,2025-01-07,remote-logs/logs/train/2025-01-07/00-06-23_tagformer_lr_opt_tagformer/5_tagformer_building_count/hydra/config.yaml
+huge,building_count,(M) TagCountMLP,14.063934326171875,2m 35s,0.003655471034013075,9.519848900022671e-05,0.0009946477538188647,2025-01-07,remote-logs/logs/train/2025-01-07/01-03-02_lr_opt_tagcountencoder/7_tagcountencoder_building_count/hydra/config.yaml
+huge,building_count,geojepa_t_jan06-T-LIN,14.63263988494873,2m 41s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan06/geojepa_t_jan06_linr/hydra/config.yaml
+huge,building_count,geojepa_gt_300e_small_b-GT-LIN,14.791159629821777,2m 18s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/building_count/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_linr/hydra/config.yaml
+huge,building_count,(M) Tagformer-S,15.032379150390625,8m 43s,0.0028347264176566394,3.2951277968201005e-05,0.0026586792836830004,2025-01-06,remote-logs/logs/train/2025-01-06/21-03-45_tagformer_lr_opt_tagformer/5_tagformer_building_count/hydra/config.yaml
+huge,building_count,(M) Tagformer-SP,15.126930236816406,6m 42s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-06,remote-logs/logs/train/2025-01-06/22-18-52_tagformer_lr_opt_tagformer/4_tagformer_building_count/hydra/config.yaml
+huge,building_count,TagformerLMAE-LIN,15.227082252502441,2m 4s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/building_count/tagformer_lmae_100e/tagformer_lmae_100e_linr/hydra/config.yaml
+huge,building_count,-T-LIN,15.99334716796875,2m 60s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_linr/hydra/config.yaml
+huge,building_count,geojepa_gt_300e-GT-LIN,16.014883041381836,2m 15s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/building_count/geojepa_gt_300e/geojepa_gt_300e_linr/hydra/config.yaml
+huge,building_count,TagAE-LIN,16.083200454711914,2m 35s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/tag_ae_dec_28/tag_ae_dec_28_linr/hydra/config.yaml
+huge,building_count,geojepa_t_e3-T-LIN,16.20648193359375,2m 13s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e3/geojepa_t_e3_linr/hydra/config.yaml
+huge,building_count,ScaleMAE-MLP,16.212785720825195,2m 52s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/scalemae/scalemae_mlpr/hydra/config.yaml
+huge,building_count,geojepa_t_300e_jan13-T-LIN,17.25664710998535,2m 37s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/building_count/geojepa_t_300e_jan13/geojepa_t_300e_jan13_linr/hydra/config.yaml
+huge,building_count,geojepa_t_e1-T-LIN,17.273027420043945,2m 15s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e1/geojepa_t_e1_linr/hydra/config.yaml
+huge,building_count,ViT-B/16-MLP,17.755996704101562,2m 37s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/vitb16/vitb16_mlpr/hydra/config.yaml
+huge,building_count,geojepa_t_jan12_150e-T-LIN,18.061447143554688,2m 11s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/building_count/geojepa_t_jan12_150e/geojepa_t_jan12_150e_linr/hydra/config.yaml
+huge,building_count,AG-97M-600s,18.638641357421875,11m 59s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/building_count/high-600s/hydra/config.yaml
+huge,building_count,TagPool-LIN,18.663005828857422,2m 40s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/entity_tag_avg/entity_tag_avg_linr/hydra/config.yaml
+huge,building_count,AG-97M-900s,19.053524017333984,17m 16s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/building_count/high-900s/hydra/config.yaml
+huge,building_count,AG-4M-900s,19.704265594482422,15m 34s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/building_count/medium-900s/hydra/config.yaml
+huge,building_count,AG-4M-600s,19.879011154174805,10m 32s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/building_count/medium-600s/hydra/config.yaml
+huge,building_count,ScaleMAE-LIN,19.89842987060547,3m 40s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/building_count/scalemae/scalemae_linr/hydra/config.yaml
+huge,building_count,AG-197M-3600s,20.09369659423828,64m 23s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/building_count/best-3600s/hydra/config.yaml
+huge,building_count,geojepa_t_e2-T-LIN,20.395572662353516,2m 13s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e2/geojepa_t_e2_linr/hydra/config.yaml
+huge,building_count,ViT-B/16-LIN,20.719152450561523,2m 11s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/vitb16/vitb16_linr/hydra/config.yaml
+huge,building_count,ViT-B/16,22.9842529296875,2m 35s,0.00996446442449157,2.0232248007601108e-05,5.005157190782726e-05,2025-01-03,remote-logs/logs/train/2025-01-03/11-17-20_lr_opt_embedding_lookup/4_embedding_lookup_building_count_cheat/hydra/config.yaml
+huge,building_count,(M) geojepa_t_300e_jan13-T-MLP,25.94089126586914,0m 8s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/building_count/geojepa_t_300e_jan13_masked_building_count/geojepa_t_300e_jan13_masked_building_count_mlpr/hydra/config.yaml
+huge,building_count,(M) TagPool-MLP,26.174203872680664,0m 9s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/building_count/entity_tag_avg_masked_building_count/entity_tag_avg_masked_building_count_mlpr/hydra/config.yaml
+huge,building_count,(M) geojepa_t_e1-T-MLP,27.788148880004883,0m 3s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/building_count/geojepa_t_e1_masked_building_count/geojepa_t_e1_masked_building_count_mlpr/hydra/config.yaml
+huge,building_count,Dummy,31.87,,,,,2025-01-12,remote-logs/baselines/building_count/hydra/config.yaml
+huge,building_count,cheat_tagformer_ae-LIN,32.21189498901367,2m 4s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/building_count/tagformer_ae/tagformer_ae_linr/hydra/config.yaml
+huge,building_count,EfficientNet-LIN,32.21200180053711,2m 53s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/efficientnet/efficientnet_linr/hydra/config.yaml
+huge,building_count,ResNet-LIN,32.212310791015625,3m 11s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/resnet/resnet_linr/hydra/config.yaml
+huge,building_count,EfficientNet-MLP,32.21342468261719,3m 0s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/efficientnet/efficientnet_mlpr/hydra/config.yaml
+huge,building_count,ResNet-MLP,32.21345520019531,3m 18s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/resnet/resnet_mlpr/hydra/config.yaml
+huge,building_count,cheat_tagformer_ae-MLP,32.21437454223633,0m 33s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/building_count/tagformer_ae/tagformer_ae_mlpr/hydra/config.yaml
+huge,building_count,(M) TagPool-LIN,34.70415496826172,0m 6s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/building_count/entity_tag_avg_masked_building_count/entity_tag_avg_masked_building_count_linr/hydra/config.yaml
+huge,building_count,(M) geojepa_t_300e_jan13-T-LIN,35.93088150024414,0m 6s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/building_count/geojepa_t_300e_jan13_masked_building_count/geojepa_t_300e_jan13_masked_building_count_linr/hydra/config.yaml
+huge,building_count,(M) geojepa_t_e1-T-LIN,36.5993537902832,0m 5s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/building_count/geojepa_t_e1_masked_building_count/geojepa_t_e1_masked_building_count_linr/hydra/config.yaml
+huge,car_bridge,Tagformer-P,0.007417729590088129,4m 48s,0.0032321179903596806,1.920796235603235e-05,0.0027889186623586263,2025-01-07,remote-logs/logs/train/2025-01-07/02-56-15_tagformer_lr_opt_tagformer/0_tagformer_car_bridge_cheat/hydra/config.yaml
+huge,car_bridge,Tagformer,0.00780772278085351,5m 14s,0.00022117261150643138,3.733966164892696e-05,6.208007546559515e-05,2025-01-07,remote-logs/logs/train/2025-01-07/02-35-36_tagformer_lr_opt_tagformer/5_tagformer_car_bridge_cheat/hydra/config.yaml
+huge,car_bridge,Tagformer-S,0.010650443844497204,6m 13s,0.00011147042903096767,6.497684999534613e-05,0.0010722281521696208,2025-01-07,remote-logs/logs/train/2025-01-07/01-30-58_tagformer_lr_opt_tagformer/8_tagformer_car_bridge_cheat/hydra/config.yaml
+huge,car_bridge,Tagformer-SP,0.020863445475697517,4m 45s,0.003566876206495317,3.90220139678732e-06,0.0013613746661855634,2025-01-07,remote-logs/logs/train/2025-01-07/02-18-44_tagformer_lr_opt_tagformer/9_tagformer_car_bridge_cheat/hydra/config.yaml
+huge,car_bridge,TagCountMLP,0.04726564884185791,1m 48s,0.009964614669997835,9.515962290251638e-05,0.0021997515008536214,2025-01-07,remote-logs/logs/train/2025-01-07/03-26-26_lr_opt_tagcountencoder/4_tagcountencoder_car_bridge_cheat/hydra/config.yaml
+huge,car_bridge,TagPool-MLP,0.09792571514844894,1m 1s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/entity_tag_avg/entity_tag_avg_mlpc/hydra/config.yaml
+huge,car_bridge,TagPool-LIN,0.1203569695353508,0m 59s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/car_bridge/entity_tag_avg/entity_tag_avg_linc/hydra/config.yaml
+huge,car_bridge,(M) Tagformer-P,0.13062748312950134,4m 41s,0.0018586277961895256,2.2034642084453263e-05,0.0008448757388399872,2025-01-07,remote-logs/logs/train/2025-01-07/05-22-54_tagformer_lr_opt_tagformer/9_tagformer_car_bridge/hydra/config.yaml
+huge,car_bridge,(M) Tagformer,0.13845914602279663,4m 38s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-07,remote-logs/logs/train/2025-01-07/04-53-17_tagformer_lr_opt_tagformer/4_tagformer_car_bridge/hydra/config.yaml
+huge,car_bridge,geojepa_t_jan06-T-MLP,0.14399421215057373,1m 2s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan06/geojepa_t_jan06_mlpc/hydra/config.yaml
+huge,car_bridge,TagformerLMAE-MLP,0.16136035323143005,0m 51s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/car_bridge/tagformer_lmae/tagformer_lmae_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_t_jan06-T-LIN,0.16401350498199463,1m 1s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan06/geojepa_t_jan06_linc/hydra/config.yaml
+huge,car_bridge,geojepa_t_e1-T-MLP,0.16546069085597992,0m 12s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e1/geojepa_t_e1_mlpc/hydra/config.yaml
+huge,car_bridge,(M) Tagformer-SP,0.16909722983837128,4m 40s,0.0032321179903596806,1.920796235603235e-05,0.0027889186623586263,2025-01-07,remote-logs/logs/train/2025-01-07/04-26-22_tagformer_lr_opt_tagformer/0_tagformer_car_bridge/hydra/config.yaml
+huge,car_bridge,(M) geojepa_t_e1-T-MLP,0.17173178493976593,0m 13s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/car_bridge/geojepa_t_e1_masked_car_bridge/geojepa_t_e1_masked_car_bridge_mlpc/hydra/config.yaml
+huge,car_bridge,(M) TagPool-MLP,0.17534974217414856,1m 9s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/entity_tag_avg_masked_car_bridge/entity_tag_avg_masked_car_bridge_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_t_e2-T-MLP,0.17993246018886566,0m 52s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e2/geojepa_t_e2_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_t_e1-T-LIN,0.18017366528511047,0m 40s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e1/geojepa_t_e1_linc/hydra/config.yaml
+huge,car_bridge,geojepa_t_e3-T-MLP,0.18475639820098877,0m 16s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e3/geojepa_t_e3_mlpc/hydra/config.yaml
+huge,car_bridge,(M) Tagformer-S,0.18840794265270233,6m 14s,0.00011147042903096767,6.497684999534613e-05,0.0010722281521696208,2025-01-07,remote-logs/logs/train/2025-01-07/03-45-57_tagformer_lr_opt_tagformer/8_tagformer_car_bridge/hydra/config.yaml
+huge,car_bridge,(M) geojepa_t_e1-T-LIN,0.18861553072929382,0m 51s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/car_bridge/geojepa_t_e1_masked_car_bridge/geojepa_t_e1_masked_car_bridge_linc/hydra/config.yaml
+huge,car_bridge,(M) TagPool-LIN,0.18909792602062225,0m 59s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/car_bridge/entity_tag_avg_masked_car_bridge/entity_tag_avg_masked_car_bridge_linc/hydra/config.yaml
+huge,car_bridge,geojepa_t_jan12_150e-T-MLP,0.1929570734500885,0m 51s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/car_bridge/geojepa_t_jan12_150e/geojepa_t_jan12_150e_mlpc/hydra/config.yaml
+huge,car_bridge,(M) TagCountMLP,0.1943996548652649,1m 48s,0.009648693745382655,6.878593871844138e-05,0.0022469710059642017,2025-01-07,remote-logs/logs/train/2025-01-07/05-49-23_lr_opt_tagcountencoder/2_tagcountencoder_car_bridge/hydra/config.yaml
+huge,car_bridge,geojepa_t_300e_jan13-T-MLP,0.19874578714370728,0m 53s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/car_bridge/geojepa_t_300e_jan13/geojepa_t_300e_jan13_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_t_e3-T-LIN,0.19995176792144775,0m 50s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e3/geojepa_t_e3_linc/hydra/config.yaml
+huge,car_bridge,geojepa_gt_300e_small_b-GT-MLP,0.200434148311615,0m 18s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_gt_300e-GT-MLP,0.2038109004497528,0m 20s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_gt_300e/geojepa_gt_300e_mlpc/hydra/config.yaml
+huge,car_bridge,(M) geojepa_t_300e_jan13-T-MLP,0.20477569103240967,0m 17s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/car_bridge/geojepa_t_300e_jan13_masked_car_bridge/geojepa_t_300e_jan13_masked_car_bridge_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_t_jan12_150e-T-LIN,0.20477569103240967,0m 50s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/car_bridge/geojepa_t_jan12_150e/geojepa_t_jan12_150e_linc/hydra/config.yaml
+huge,car_bridge,geojepa_gt_300e_small_b-GT-LIN,0.2083936333656311,0m 29s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_linc/hydra/config.yaml
+huge,car_bridge,TagformerLMAE-LIN,0.21562951803207397,0m 50s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/car_bridge/tagformer_lmae/tagformer_lmae_linc/hydra/config.yaml
+huge,car_bridge,geojepa_t_300e_jan13-T-LIN,0.2158707231283188,0m 52s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/car_bridge/geojepa_t_300e_jan13/geojepa_t_300e_jan13_linc/hydra/config.yaml
+huge,car_bridge,geojepa_gt_300e-GT-LIN,0.21659430861473083,0m 47s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_gt_300e/geojepa_gt_300e_linc/hydra/config.yaml
+huge,car_bridge,geojepa_t_e2-T-LIN,0.21828268468379974,0m 50s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e2/geojepa_t_e2_linc/hydra/config.yaml
+huge,car_bridge,geojepa_t_jan04-T-MLP,0.21972985565662384,0m 14s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan04/geojepa_t_jan04_mlpc/hydra/config.yaml
+huge,car_bridge,(M) geojepa_t_300e_jan13-T-LIN,0.22720694541931152,0m 57s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/car_bridge/geojepa_t_300e_jan13_masked_car_bridge/geojepa_t_300e_jan13_masked_car_bridge_linc/hydra/config.yaml
+huge,car_bridge,ViT-B/16-LIN,0.23251326382160187,0m 59s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/vitb16/vitb16_linc/hydra/config.yaml
+huge,car_bridge,ViT-B/16-MLP,0.23540762066841125,0m 59s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/vitb16/vitb16_mlpc/hydra/config.yaml
+huge,car_bridge,(M) geojepa_gti_170e-GTI-LIN,0.23806078732013702,0m 34s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/car_bridge/geojepa_gti_170e_masked_car_bridge/geojepa_gti_170e_masked_car_bridge_linc/hydra/config.yaml
+huge,car_bridge,-TI-MLP,0.23806078732013702,0m 23s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_ti_jan06/geojepa_ti_jan06/_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_ti_jan06-TI-LIN,0.24023154377937317,1m 2s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_ti_jan06/geojepa_ti_jan06_linc/hydra/config.yaml
+huge,car_bridge,geojepa_gti_170e-GTI-LIN,0.24119633436203003,0m 52s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/geojepa_gti_170e/geojepa_gti_170e_linc/hydra/config.yaml
+huge,car_bridge,geojepa_ti_jan06-TI-MLP,0.24143753945827484,1m 3s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_ti_jan06/geojepa_ti_jan06_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_ti_jan12_100e-TI-MLP,0.24288471043109894,0m 52s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/car_bridge/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_mlpc/hydra/config.yaml
+huge,car_bridge,ScaleMAE-MLP,0.24312590062618256,0m 55s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/scalemae/scalemae_mlpc/hydra/config.yaml
+huge,car_bridge,(M) geojepa_gti_300e-GTI-LIN,0.24336710572242737,0m 51s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/car_bridge/geojepa_gti_300e_masked_car_bridge/geojepa_gti_300e_masked_car_bridge_linc/hydra/config.yaml
+huge,car_bridge,geojepa_gti_300e-GTI-LIN,0.24409069120883942,0m 53s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/car_bridge/geojepa_gti_300e/geojepa_gti_300e_linc/hydra/config.yaml
+huge,car_bridge,geojepa_ti_jan12_100e-TI-LIN,0.24481427669525146,0m 50s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/car_bridge/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_linc/hydra/config.yaml
+huge,car_bridge,TagAE-MLP,0.24577906727790833,1m 4s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/tag_ae_dec_28/tag_ae_dec_28_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_t_jan04-T-LIN,0.24722623825073242,0m 43s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan04/geojepa_t_jan04_linc/hydra/config.yaml
+huge,car_bridge,geojepa_gti_dec30-GTI-MLP,0.24794983863830566,0m 22s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_gti_dec30/geojepa_gti_dec30_mlpc/hydra/config.yaml
+huge,car_bridge,ScaleMAE-LIN,0.24819102883338928,0m 59s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/scalemae/scalemae_linc/hydra/config.yaml
+huge,car_bridge,geojepa_gti_300e-GTI-MLP,0.24891461431980133,0m 20s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/car_bridge/geojepa_gti_300e/geojepa_gti_300e_mlpc/hydra/config.yaml
+huge,car_bridge,-TI-LIN,0.24939700961112976,0m 43s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_ti_jan06/geojepa_ti_jan06/_linc/hydra/config.yaml
+huge,car_bridge,(M) geojepa_gti_300e-GTI-MLP,0.2532561421394348,0m 19s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/car_bridge/geojepa_gti_300e_masked_car_bridge/geojepa_gti_300e_masked_car_bridge_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_ti_jan14_300e-TI-LIN,0.25373855233192444,0m 50s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_linc/hydra/config.yaml
+huge,car_bridge,geojepa_ti_jan14_300e-TI-MLP,0.2544621229171753,0m 52s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_mlpc/hydra/config.yaml
+huge,car_bridge,(M) geojepa_gti_170e-GTI-MLP,0.2575976848602295,0m 21s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/car_bridge/geojepa_gti_170e_masked_car_bridge/geojepa_gti_170e_masked_car_bridge_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_gti_170e-GTI-MLP,0.25832128524780273,0m 53s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/geojepa_gti_170e/geojepa_gti_170e_mlpc/hydra/config.yaml
+huge,car_bridge,geojepa_gti_dec30-GTI-LIN,0.25976845622062683,0m 55s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_gti_dec30/geojepa_gti_dec30_linc/hydra/config.yaml
+huge,car_bridge,-T-MLP,0.27086347341537476,0m 7s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_mlpc/hydra/config.yaml
+huge,car_bridge,-T-LIN,0.2735166549682617,0m 21s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_linc/hydra/config.yaml
+huge,car_bridge,TagAE-LIN,0.27689340710639954,1m 6s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/tag_ae_dec_28/tag_ae_dec_28_linc/hydra/config.yaml
+huge,car_bridge,AG-97M-900s,0.2855706810951233,16m 28s,,,,2025-01-14,remote-logs/ag-logs/eval/2025-01-14/car_bridge/high-900s/hydra/config.yaml
+huge,car_bridge,AG-97M-600s,0.2943834066390991,11m 21s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/car_bridge/high-600s/hydra/config.yaml
+huge,car_bridge,AG-197M-3600s,0.3076649308204651,63m 13s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/car_bridge/best-3600s/hydra/config.yaml
+huge,car_bridge,ViT-B/16,0.3194172978401184,1m 21s,0.00799255616523366,7.407363456309807e-05,0.0020997185010505114,2025-01-03,remote-logs/logs/train/2025-01-03/12-33-25_lr_opt_embedding_lookup/8_embedding_lookup_car_bridge_cheat/hydra/config.yaml
+huge,car_bridge,AG-4M-900s,0.3405347466468811,15m 20s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/car_bridge/medium-900s/hydra/config.yaml
+huge,car_bridge,AG-4M-600s,0.3452354073524475,10m 21s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/car_bridge/medium-600s/hydra/config.yaml
+huge,car_bridge,Dummy,0.38,,,,,2025-01-12,remote-logs/baselines/car_bridge/hydra/config.yaml
+huge,car_bridge,ResNet-MLP,0.3890496790409088,1m 15s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/resnet/resnet_mlpc/hydra/config.yaml
+huge,car_bridge,ResNet-LIN,0.3890496790409088,1m 12s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/resnet/resnet_linc/hydra/config.yaml
+huge,car_bridge,EfficientNet-MLP,0.3890496790409088,1m 7s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/efficientnet/efficientnet_mlpc/hydra/config.yaml
+huge,car_bridge,EfficientNet-LIN,0.3890496790409088,1m 5s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/efficientnet/efficientnet_linc/hydra/config.yaml
+huge,car_bridge,cheat_tagformer_ae-MLP,0.3890496790409088,0m 9s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/car_bridge/tagformer_ae/tagformer_ae_mlpc/hydra/config.yaml
+huge,car_bridge,cheat_tagformer_ae-LIN,0.3890496790409088,0m 9s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/car_bridge/tagformer_ae/tagformer_ae_linc/hydra/config.yaml
+huge,max_speed,geojepa_t_e1-T-MLP,10.921248435974121,2m 12s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e1/geojepa_t_e1_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_t_jan06-T-MLP,11.503021240234375,2m 44s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan06/geojepa_t_jan06_mlpr/hydra/config.yaml
+huge,max_speed,(M) geojepa_t_e1-T-MLP,11.787013053894043,2m 20s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_t_e1_masked_max_speed/geojepa_t_e1_masked_max_speed_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_t_jan12_150e-T-MLP,12.373695373535156,2m 12s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/max_speed/geojepa_t_jan12_150e/geojepa_t_jan12_150e_mlpr/hydra/config.yaml
+huge,max_speed,TagPool-MLP,12.378695487976074,2m 38s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/max_speed/entity_tag_avg/entity_tag_avg_mlpr/hydra/config.yaml
+huge,max_speed,(M) TagPool-MLP,13.061823844909668,2m 46s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/entity_tag_avg_masked_max_speed/entity_tag_avg_masked_max_speed_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_t_300e_jan13-T-MLP,13.144392013549805,2m 54s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/max_speed/geojepa_t_300e_jan13/geojepa_t_300e_jan13_mlpr/hydra/config.yaml
+huge,max_speed,Tagformer-P,13.216890335083008,11m 58s,0.009616936687120931,1.8304414962137956e-06,0.0022433967130045503,2025-01-07,remote-logs/logs/train/2025-01-07/12-38-58_tagformer_lr_opt_tagformer/2_tagformer_max_speed_cheat/hydra/config.yaml
+huge,max_speed,geojepa_t_e3-T-MLP,13.24832534790039,1m 13s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e3/geojepa_t_e3_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_gt_300e_small_b-GT-MLP,13.341132164001465,1m 24s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/max_speed/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_mlpr/hydra/config.yaml
+huge,max_speed,(M) geojepa_t_300e_jan13-T-MLP,13.797459602355957,1m 33s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_t_300e_jan13_masked_max_speed/geojepa_t_300e_jan13_masked_max_speed_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_t_e2-T-MLP,14.397246360778809,2m 14s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e2/geojepa_t_e2_mlpr/hydra/config.yaml
+huge,max_speed,TagCountMLP,14.432826042175293,4m 8s,0.00799255616523366,7.407363456309807e-05,0.0020997185010505114,2025-01-07,remote-logs/logs/train/2025-01-07/14-20-34_lr_opt_tagcountencoder/8_tagcountencoder_max_speed_cheat/hydra/config.yaml
+huge,max_speed,Tagformer-SP,14.587553024291992,11m 25s,0.0009456138575075577,4.8174788237396595e-05,0.0009553227438966637,2025-01-07,remote-logs/logs/train/2025-01-07/11-33-20_tagformer_lr_opt_tagformer/5_tagformer_max_speed_cheat/hydra/config.yaml
+huge,max_speed,geojepa_t_jan04-T-MLP,15.694286346435547,2m 5s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan04/geojepa_t_jan04_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_gt_300e-GT-MLP,15.781810760498047,1m 42s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/max_speed/geojepa_gt_300e/geojepa_gt_300e_mlpr/hydra/config.yaml
+huge,max_speed,TagformerLMAE-MLP,16.053985595703125,2m 9s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/max_speed/tagformer_lmae/tagformer_lmae_mlpr/hydra/config.yaml
+huge,max_speed,Tagformer-S,16.129980087280273,12m 48s,0.0028371221011146428,6.49031097775222e-05,0.0024771666465786602,2025-01-07,remote-logs/logs/train/2025-01-07/09-59-49_tagformer_lr_opt_tagformer/9_tagformer_max_speed_cheat/hydra/config.yaml
+huge,max_speed,ViT-B/16-MLP,18.04412841796875,0m 45s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/vitb16/vitb16_mlpr/hydra/config.yaml
+huge,max_speed,TagPool-LIN,18.984024047851562,2m 47s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/max_speed/entity_tag_avg/entity_tag_avg_linr/hydra/config.yaml
+huge,max_speed,(M) TagPool-LIN,19.29728889465332,2m 36s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/entity_tag_avg_masked_max_speed/entity_tag_avg_masked_max_speed_linr/hydra/config.yaml
+huge,max_speed,geojepa_t_e1-T-LIN,19.365570068359375,2m 11s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e1/geojepa_t_e1_linr/hydra/config.yaml
+huge,max_speed,(M) geojepa_gti_170e-GTI-MLP,20.091651916503906,2m 9s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_gti_170e_masked_max_speed/geojepa_gti_170e_masked_max_speed_mlpr/hydra/config.yaml
+huge,max_speed,(M) Tagformer-P,20.14720344543457,14m 38s,0.0032321179903596806,1.920796235603235e-05,0.0027889186623586263,2025-01-07,remote-logs/logs/train/2025-01-07/17-29-35_tagformer_lr_opt_tagformer/0_tagformer_max_speed/hydra/config.yaml
+huge,max_speed,(M) Tagformer,20.307106018066406,14m 29s,0.0032321179903596806,1.920796235603235e-05,0.0027889186623586263,2025-01-07,remote-logs/logs/train/2025-01-07/17-06-15_tagformer_lr_opt_tagformer/0_tagformer_max_speed/hydra/config.yaml
+huge,max_speed,geojepa_gti_170e-GTI-MLP,20.404699325561523,2m 16s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/max_speed/geojepa_gti_170e/geojepa_gti_170e_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_gti_dec30-GTI-MLP,20.46802520751953,2m 52s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_gti_dec30/geojepa_gti_dec30_mlpr/hydra/config.yaml
+huge,max_speed,(M) TagCountMLP,20.561641693115234,5m 3s,0.0021251467576750933,6.10952526173518e-05,0.0017870385642347753,2025-01-07,remote-logs/logs/train/2025-01-07/17-49-31_lr_opt_tagcountencoder/1_tagcountencoder_max_speed/hydra/config.yaml
+huge,max_speed,TagAE-MLP,20.63050079345703,3m 18s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/max_speed/tag_ae_dec_28/tag_ae_dec_28_mlpr/hydra/config.yaml
+huge,max_speed,(M) geojepa_gti_300e-GTI-MLP,20.64558982849121,2m 9s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_gti_300e_masked_max_speed/geojepa_gti_300e_masked_max_speed_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_ti_jan12_100e-TI-MLP,20.734901428222656,2m 14s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/max_speed/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_gti_300e-GTI-MLP,20.75957679748535,2m 13s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/max_speed/geojepa_gti_300e/geojepa_gti_300e_mlpr/hydra/config.yaml
+huge,max_speed,ScaleMAE-MLP,20.876483917236328,3m 11s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/max_speed/scalemae/scalemae_mlpr/hydra/config.yaml
+huge,max_speed,(M) geojepa_t_e1-T-LIN,20.883453369140625,2m 16s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_t_e1_masked_max_speed/geojepa_t_e1_masked_max_speed_linr/hydra/config.yaml
+huge,max_speed,-TI-MLP,20.908395767211914,3m 1s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_ti_jan06/geojepa_ti_jan06/_mlpr/hydra/config.yaml
+huge,max_speed,(M) Tagformer-S,20.94957733154297,11m 39s,0.0007139000379058191,9.853055735060545e-05,6.278146239300372e-05,2025-01-07,remote-logs/logs/train/2025-01-07/15-04-22_tagformer_lr_opt_tagformer/5_tagformer_max_speed/hydra/config.yaml
+huge,max_speed,geojepa_ti_jan06-TI-MLP,20.99259376525879,2m 40s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_ti_jan06/geojepa_ti_jan06_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_ti_jan14_300e-TI-MLP,21.300521850585938,2m 13s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/max_speed/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_mlpr/hydra/config.yaml
+huge,max_speed,geojepa_t_e3-T-LIN,21.48160171508789,2m 9s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e3/geojepa_t_e3_linr/hydra/config.yaml
+huge,max_speed,ViT-B/16,21.50441551208496,2m 46s,0.009303199318889763,3.847379991236073e-05,0.0005525725162196063,2025-01-03,remote-logs/logs/train/2025-01-03/12-03-01_lr_opt_embedding_lookup/0_embedding_lookup_max_speed_cheat/hydra/config.yaml
+huge,max_speed,geojepa_gt_300e_small_b-GT-LIN,21.565532684326172,2m 13s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/max_speed/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_linr/hydra/config.yaml
+huge,max_speed,geojepa_t_jan12_150e-T-LIN,22.267513275146484,2m 7s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/max_speed/geojepa_t_jan12_150e/geojepa_t_jan12_150e_linr/hydra/config.yaml
+huge,max_speed,geojepa_t_300e_jan13-T-LIN,22.62451171875,2m 49s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/max_speed/geojepa_t_300e_jan13/geojepa_t_300e_jan13_linr/hydra/config.yaml
+huge,max_speed,(M) geojepa_t_300e_jan13-T-LIN,22.998262405395508,2m 35s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_t_300e_jan13_masked_max_speed/geojepa_t_300e_jan13_masked_max_speed_linr/hydra/config.yaml
+huge,max_speed,geojepa_t_jan06-T-LIN,23.30146598815918,2m 37s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan06/geojepa_t_jan06_linr/hydra/config.yaml
+huge,max_speed,geojepa_gt_300e-GT-LIN,23.918304443359375,2m 11s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/max_speed/geojepa_gt_300e/geojepa_gt_300e_linr/hydra/config.yaml
+huge,max_speed,-T-MLP,24.368146896362305,1m 7s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_mlpr/hydra/config.yaml
+huge,max_speed,AG-197M-3600s,25.708186381078395,66m 54s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/max_speed/best-3600s/hydra/config.yaml
+huge,max_speed,geojepa_t_jan04-T-LIN,26.087257385253906,2m 46s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan04/geojepa_t_jan04_linr/hydra/config.yaml
+huge,max_speed,geojepa_t_e2-T-LIN,26.1298885345459,2m 9s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e2/geojepa_t_e2_linr/hydra/config.yaml
+huge,max_speed,(M) geojepa_gti_300e-GTI-LIN,26.778553009033203,2m 5s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_gti_300e_masked_max_speed/geojepa_gti_300e_masked_max_speed_linr/hydra/config.yaml
+huge,max_speed,geojepa_gti_300e-GTI-LIN,26.837278366088867,2m 15s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/max_speed/geojepa_gti_300e/geojepa_gti_300e_linr/hydra/config.yaml
+huge,max_speed,(M) geojepa_gti_170e-GTI-LIN,26.971458435058594,2m 5s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_gti_170e_masked_max_speed/geojepa_gti_170e_masked_max_speed_linr/hydra/config.yaml
+huge,max_speed,geojepa_gti_170e-GTI-LIN,27.09962272644043,2m 12s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/max_speed/geojepa_gti_170e/geojepa_gti_170e_linr/hydra/config.yaml
+huge,max_speed,ViT-B/16-LIN,27.233875274658203,2m 8s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/vitb16/vitb16_linr/hydra/config.yaml
+huge,max_speed,TagformerLMAE-LIN,27.250978469848633,2m 6s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/max_speed/tagformer_lmae/tagformer_lmae_linr/hydra/config.yaml
+huge,max_speed,geojepa_ti_jan12_100e-TI-LIN,28.20223617553711,2m 9s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/max_speed/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_linr/hydra/config.yaml
+huge,max_speed,geojepa_ti_jan14_300e-TI-LIN,29.28449249267578,2m 9s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/max_speed/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_linr/hydra/config.yaml
+huge,max_speed,geojepa_gti_dec30-GTI-LIN,30.142087936401367,2m 37s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_gti_dec30/geojepa_gti_dec30_linr/hydra/config.yaml
+huge,max_speed,AG-4M-900s,30.840433618774977,15m 49s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/max_speed/medium-900s/hydra/config.yaml
+huge,max_speed,AG-4M-600s,31.541974829030465,10m 53s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/max_speed/medium-600s/hydra/config.yaml
+huge,max_speed,ScaleMAE-LIN,31.788799285888672,2m 40s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/max_speed/scalemae/scalemae_linr/hydra/config.yaml
+huge,max_speed,geojepa_ti_jan06-TI-LIN,32.36046600341797,2m 41s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_ti_jan06/geojepa_ti_jan06_linr/hydra/config.yaml
+huge,max_speed,-TI-LIN,32.380126953125,3m 4s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_ti_jan06/geojepa_ti_jan06/_linr/hydra/config.yaml
+huge,max_speed,-T-LIN,35.34092330932617,3m 2s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_linr/hydra/config.yaml
+huge,max_speed,TagAE-LIN,36.31580352783203,3m 0s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/max_speed/tag_ae_dec_28/tag_ae_dec_28_linr/hydra/config.yaml
+huge,max_speed,ResNet-MLP,38.46308135986328,3m 52s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/max_speed/resnet/resnet_mlpr/hydra/config.yaml
+huge,max_speed,EfficientNet-MLP,38.46308517456055,2m 56s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/max_speed/efficientnet/efficientnet_mlpr/hydra/config.yaml
+huge,max_speed,cheat_tagformer_ae-MLP,38.46354293823242,0m 30s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/max_speed/tagformer_ae/tagformer_ae_mlpr/hydra/config.yaml
+huge,max_speed,(M) Tagformer-SP,38.526309967041016,2m 45s,0.009648693745382655,6.566453259028551e-05,0.0017870385642347753,2025-01-07,remote-logs/logs/train/2025-01-07/16-33-50_tagformer_lr_opt_tagformer/1_tagformer_max_speed/hydra/config.yaml
+huge,max_speed,Dummy,46.83,,,,,2025-01-12,remote-logs/baselines/max_speed/hydra/config.yaml
+huge,max_speed,EfficientNet-LIN,64.3536376953125,2m 47s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/max_speed/efficientnet/efficientnet_linr/hydra/config.yaml
+huge,max_speed,ResNet-LIN,64.3575210571289,3m 40s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/max_speed/resnet/resnet_linr/hydra/config.yaml
+huge,max_speed,cheat_tagformer_ae-LIN,64.36587524414062,2m 6s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/max_speed/tagformer_ae/tagformer_ae_linr/hydra/config.yaml
+huge,traffic_signals,Tagformer-S,0.12371180206537247,6m 42s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-07,remote-logs/logs/train/2025-01-07/06-08-53_tagformer_lr_opt_tagformer/4_tagformer_traffic_signals_cheat/hydra/config.yaml
+huge,traffic_signals,Tagformer-SP,0.17500744760036469,5m 11s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-07,remote-logs/logs/train/2025-01-07/06-54-21_tagformer_lr_opt_tagformer/4_tagformer_traffic_signals_cheat/hydra/config.yaml
+huge,traffic_signals,TagCountMLP,0.9163608551025391,1m 54s,0.003295127796820102,5.052506531785792e-05,0.0017523524835743303,2025-01-07,remote-logs/logs/train/2025-01-07/07-36-47_lr_opt_tagcountencoder/6_tagcountencoder_traffic_signals_cheat/hydra/config.yaml
+huge,traffic_signals,TagPool-MLP,1.0117381811141968,0m 59s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/traffic_signals/entity_tag_avg/entity_tag_avg_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_jan06-T-MLP,1.684853196144104,0m 60s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan06/geojepa_t_jan06_mlpr/hydra/config.yaml
+huge,traffic_signals,TagformerLMAE-MLP,1.716140627861023,0m 48s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/traffic_signals/tagformer_lmae/tagformer_lmae_mlpr/hydra/config.yaml
+huge,traffic_signals,TagPool-LIN,1.7275570631027222,1m 4s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/traffic_signals/entity_tag_avg/entity_tag_avg_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_e1-T-MLP,1.7540295124053955,0m 28s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e1/geojepa_t_e1_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_jan12_150e-T-MLP,1.7593673467636108,0m 49s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/traffic_signals/geojepa_t_jan12_150e/geojepa_t_jan12_150e_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_e2-T-MLP,1.7737118005752563,0m 50s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e2/geojepa_t_e2_mlpr/hydra/config.yaml
+huge,traffic_signals,(M) Tagformer-SP,1.7968240976333618,5m 10s,0.0002804378583909821,4.5549278796124594e-05,0.0029732620150982707,2025-01-07,remote-logs/logs/train/2025-01-07/08-56-42_tagformer_lr_opt_tagformer/7_tagformer_traffic_signals/hydra/config.yaml
+huge,traffic_signals,(M) TagCountMLP,1.8000530004501343,2m 7s,0.00996446442449157,2.0232248007601108e-05,5.005157190782726e-05,2025-01-07,remote-logs/logs/train/2025-01-07/09-37-23_lr_opt_tagcountencoder/4_tagcountencoder_traffic_signals/hydra/config.yaml
+huge,traffic_signals,geojepa_t_e3-T-MLP,1.8123522996902466,0m 32s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e3/geojepa_t_e3_mlpr/hydra/config.yaml
+huge,traffic_signals,(M) Tagformer-S,1.8153142929077148,7m 8s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-07,remote-logs/logs/train/2025-01-07/07-57-17_tagformer_lr_opt_tagformer/4_tagformer_traffic_signals/hydra/config.yaml
+huge,traffic_signals,geojepa_gt_300e_small_b-GT-MLP,1.8252886533737183,0m 32s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_mlpr/hydra/config.yaml
+huge,traffic_signals,(M) TagPool-MLP,1.9094024896621704,0m 51s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/traffic_signals/entity_tag_avg_masked_traffic_signals/entity_tag_avg_masked_traffic_signals_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_300e_jan13-T-MLP,1.9289478063583374,1m 1s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/traffic_signals/geojepa_t_300e_jan13/geojepa_t_300e_jan13_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_jan06-T-LIN,1.9456416368484497,0m 58s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan06/geojepa_t_jan06_linr/hydra/config.yaml
+huge,traffic_signals,(M) geojepa_t_e1-T-MLP,1.963536262512207,0m 24s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/traffic_signals/geojepa_t_e1_masked_traffic_signals/geojepa_t_e1_masked_traffic_signals_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_jan04-T-MLP,1.9947295188903809,0m 22s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan04/geojepa_t_jan04_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_gt_300e-GT-MLP,1.9977850914001465,0m 36s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/traffic_signals/geojepa_gt_300e/geojepa_gt_300e_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_gti_170e-GTI-MLP,2.0156707763671875,0m 51s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/geojepa_gti_170e/geojepa_gti_170e_mlpr/hydra/config.yaml
+huge,traffic_signals,TagAE-MLP,2.017441749572754,1m 10s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/traffic_signals/tag_ae_dec_28/tag_ae_dec_28_mlpr/hydra/config.yaml
+huge,traffic_signals,-TI-MLP,2.0305991172790527,0m 23s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_ti_jan06/geojepa_ti_jan06/_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_ti_jan12_100e-TI-MLP,2.0678470134735107,0m 50s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/traffic_signals/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_ti_jan14_300e-TI-MLP,2.0706787109375,0m 50s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_gti_300e-GTI-MLP,2.0734007358551025,0m 21s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/traffic_signals/geojepa_gti_300e/geojepa_gti_300e_mlpr/hydra/config.yaml
+huge,traffic_signals,(M) geojepa_t_300e_jan13-T-MLP,2.0982775688171387,0m 38s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/traffic_signals/geojepa_t_300e_jan13_masked_traffic_signals/geojepa_t_300e_jan13_masked_traffic_signals_mlpr/hydra/config.yaml
+huge,traffic_signals,(M) TagPool-LIN,2.1132802963256836,0m 55s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/traffic_signals/entity_tag_avg_masked_traffic_signals/entity_tag_avg_masked_traffic_signals_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_gti_dec30-GTI-MLP,2.1173605918884277,0m 30s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_gti_dec30/geojepa_gti_dec30_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_e1-T-LIN,2.1365835666656494,0m 49s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e1/geojepa_t_e1_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_jan04-T-LIN,2.15531849861145,1m 11s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan04/geojepa_t_jan04_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_e3-T-LIN,2.1775474548339844,0m 36s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e3/geojepa_t_e3_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_gt_300e_small_b-GT-LIN,2.1825919151306152,0m 45s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_linr/hydra/config.yaml
+huge,traffic_signals,-TI-LIN,2.1829912662506104,0m 56s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_ti_jan06/geojepa_ti_jan06/_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_ti_jan06-TI-LIN,2.1837892532348633,0m 59s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_ti_jan06/geojepa_ti_jan06_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_gti_170e-GTI-LIN,2.189535617828369,0m 49s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/geojepa_gti_170e/geojepa_gti_170e_linr/hydra/config.yaml
+huge,traffic_signals,(M) geojepa_t_e1-T-LIN,2.1934926509857178,0m 48s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/traffic_signals/geojepa_t_e1_masked_traffic_signals/geojepa_t_e1_masked_traffic_signals_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_ti_jan14_300e-TI-LIN,2.1935341358184814,0m 48s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_linr/hydra/config.yaml
+huge,traffic_signals,TagAE-LIN,2.207414388656616,1m 8s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/traffic_signals/tag_ae_dec_28/tag_ae_dec_28_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_gti_300e-GTI-LIN,2.212160348892212,0m 33s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/traffic_signals/geojepa_gti_300e/geojepa_gti_300e_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_gti_dec30-GTI-LIN,2.226616382598877,1m 10s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_gti_dec30/geojepa_gti_dec30_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_ti_jan12_100e-TI-LIN,2.22662091255188,0m 48s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/traffic_signals/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_jan12_150e-T-LIN,2.2404353618621826,0m 47s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/traffic_signals/geojepa_t_jan12_150e/geojepa_t_jan12_150e_linr/hydra/config.yaml
+huge,traffic_signals,-T-MLP,2.2476935386657715,0m 9s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_300e_jan13-T-LIN,2.255255937576294,0m 49s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/traffic_signals/geojepa_t_300e_jan13/geojepa_t_300e_jan13_linr/hydra/config.yaml
+huge,traffic_signals,TagformerLMAE-LIN,2.2861766815185547,0m 33s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/traffic_signals/tagformer_lmae_100e/tagformer_lmae_100e_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_t_e2-T-LIN,2.288332462310791,0m 48s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e2/geojepa_t_e2_linr/hydra/config.yaml
+huge,traffic_signals,ScaleMAE-MLP,2.2926573753356934,1m 1s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/scalemae/scalemae_mlpr/hydra/config.yaml
+huge,traffic_signals,geojepa_gt_300e-GT-LIN,2.2935006618499756,0m 37s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/traffic_signals/geojepa_gt_300e/geojepa_gt_300e_linr/hydra/config.yaml
+huge,traffic_signals,(M) geojepa_t_300e_jan13-T-LIN,2.319786787033081,0m 34s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/traffic_signals/geojepa_t_300e_jan13_masked_traffic_signals/geojepa_t_300e_jan13_masked_traffic_signals_linr/hydra/config.yaml
+huge,traffic_signals,ViT-B/16,2.3407771587371826,1m 35s,0.007845428044588194,4.0373223860261865e-05,0.0017747494635337226,2025-01-03,remote-logs/logs/train/2025-01-03/11-44-59_lr_opt_embedding_lookup/8_embedding_lookup_traffic_signals_cheat/hydra/config.yaml
+huge,traffic_signals,ViT-B/16-LIN,2.3492050170898438,0m 21s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/vitb16/vitb16_linr/hydra/config.yaml
+huge,traffic_signals,ViT-B/16-MLP,2.3927879333496094,0m 7s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/vitb16/vitb16_mlpr/hydra/config.yaml
+huge,traffic_signals,-T-LIN,2.401467800140381,0m 26s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_linr/hydra/config.yaml
+huge,traffic_signals,ScaleMAE-LIN,2.457359790802002,0m 59s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/scalemae/scalemae_linr/hydra/config.yaml
+huge,traffic_signals,AG-197M-3600s,2.5935869216918945,63m 24s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/traffic_signals/best-3600s/hydra/config.yaml
+huge,traffic_signals,AG-4M-900s,2.8086068630218506,15m 24s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/traffic_signals/medium-900s/hydra/config.yaml
+huge,traffic_signals,AG-4M-600s,2.914931058883667,10m 26s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/traffic_signals/medium-600s/hydra/config.yaml
+huge,traffic_signals,Dummy,3.08,,,,,2025-01-12,remote-logs/baselines/traffic_signals/hydra/config.yaml
+huge,traffic_signals,cheat_tagformer_ae-MLP,3.1334164142608643,0m 21s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/traffic_signals/tagformer_ae/tagformer_ae_mlpr/hydra/config.yaml
+huge,traffic_signals,EfficientNet-MLP,3.133420944213867,1m 6s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/efficientnet/efficientnet_mlpr/hydra/config.yaml
+huge,traffic_signals,ResNet-MLP,3.133425235748291,1m 12s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/resnet/resnet_mlpr/hydra/config.yaml
+huge,traffic_signals,EfficientNet-LIN,3.1335067749023438,1m 3s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/efficientnet/efficientnet_linr/hydra/config.yaml
+huge,traffic_signals,ResNet-LIN,3.1335129737854004,1m 9s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/resnet/resnet_linr/hydra/config.yaml
+huge,traffic_signals,cheat_tagformer_ae-LIN,3.133528470993042,0m 47s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/traffic_signals/tagformer_ae/tagformer_ae_linr/hydra/config.yaml
+huge,traffic_signals,geojepa_ti_jan06-TI-MLP,3.5276706218719482,1m 1s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_ti_jan06/geojepa_ti_jan06_mlpr/hydra/config.yaml
+small,bridge,Tagformer-P,0.021808484569191933,11m 40s,0.0067051824202799225,7.514175711585728e-05,0.0009645500052158861,2025-01-10,remote-logs/logs/train/2025-01-10/22-35-30_tagformer_lr_opt_tagformer/2_tagformer_bridge_cheat/hydra/config.yaml
+small,bridge,TagCountMLP,0.03380011022090912,8m 37s,0.00993555570945232,4.232066549034979e-05,3.757194952815567e-06,2025-01-11,remote-logs/logs/train/2025-01-11/01-01-36_lr_opt_tagcountencoder/7_tagcountencoder_bridge_cheat/hydra/config.yaml
+small,bridge,Tagformer,0.04096388816833496,24m 38s,0.007362158568200267,4.232066549034979e-05,6.153481869307321e-06,2025-01-10,remote-logs/logs/train/2025-01-10/18-21-10_tagformer_lr_opt_tagformer/7_tagformer_bridge_cheat/hydra/config.yaml
+small,bridge,Tagformer-S,0.0494050569832325,37m 49s,0.008918790661883462,5.216314702228215e-05,0.00011279564375883886,2025-01-10,remote-logs/logs/train/2025-01-10/10-29-24_tagformer_lr_opt_tagformer/5_tagformer_bridge_cheat/hydra/config.yaml
+small,bridge,Tagformer-SP,0.05139268562197685,39m 30s,0.009579917154264024,9.655045506171441e-05,0.0005256784982658407,2025-01-10,remote-logs/logs/train/2025-01-10/13-39-06_tagformer_lr_opt_tagformer/4_tagformer_bridge_cheat/hydra/config.yaml
+small,bridge,TagPool-MLP,0.07692307233810425,2m 24s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/entity_tag_avg/entity_tag_avg_mlpc/hydra/config.yaml
+small,bridge,TagPool-LIN,0.08041957765817642,2m 18s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/bridge/entity_tag_avg/entity_tag_avg_linc/hydra/config.yaml
+small,bridge,TagformerLMAE-MLP,0.11538461595773697,1m 56s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/bridge/tagformer_lmae/tagformer_lmae_mlpc/hydra/config.yaml
+small,bridge,(M) Tagformer-P,0.137697234749794,29m 7s,0.0006351152427934166,3.1115449545867236e-05,0.000613718392498594,2025-01-11,remote-logs/logs/train/2025-01-11/12-29-35_tagformer_lr_opt_tagformer/6_tagformer_bridge/hydra/config.yaml
+small,bridge,(M) Tagformer-SP,0.1523558646440506,36m 52s,0.0006325780656029963,3.118368931492256e-05,0.00032341744131548307,2025-01-11,remote-logs/logs/train/2025-01-11/06-24-43_tagformer_lr_opt_tagformer/6_tagformer_bridge/hydra/config.yaml
+small,bridge,geojepa_t_e2-T-MLP,0.15734265744686127,2m 0s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e2/geojepa_t_e2_mlpc/hydra/config.yaml
+small,bridge,(M) Tagformer,0.15755166113376617,26m 51s,0.0015662542587867056,3.3801309645904495e-05,0.00034353488344376535,2025-01-11,remote-logs/logs/train/2025-01-11/09-43-28_tagformer_lr_opt_tagformer/7_tagformer_bridge/hydra/config.yaml
+small,bridge,geojepa_t_e3-T-LIN,0.17132866382598877,1m 39s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e3/geojepa_t_e3_linc/hydra/config.yaml
+small,bridge,geojepa_gt_300e_small_b-GT-LIN,0.17132866382598877,1m 31s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_linc/hydra/config.yaml
+small,bridge,geojepa_t_e1-T-LIN,0.17832167446613312,1m 58s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e1/geojepa_t_e1_linc/hydra/config.yaml
+small,bridge,(M) Tagformer-S,0.1806865930557251,35m 28s,0.0015730814988283884,1.6468567709790845e-06,1.6751251680982576e-06,2025-01-11,remote-logs/logs/train/2025-01-11/02-30-12_tagformer_lr_opt_tagformer/7_tagformer_bridge/hydra/config.yaml
+small,bridge,(M) TagCountMLP,0.18207456171512604,8m 34s,0.0058933877762760226,5.995892559494591e-05,0.00020535571827448668,2025-01-11,remote-logs/logs/train/2025-01-11/15-05-26_lr_opt_tagcountencoder/1_tagcountencoder_bridge/hydra/config.yaml
+small,bridge,geojepa_gt_300e_small_b-GT-MLP,0.18531468510627747,0m 49s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/bridge/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_mlpc/hydra/config.yaml
+small,bridge,TagformerLMAE-LIN,0.18531468510627747,1m 52s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/bridge/tagformer_lmae/tagformer_lmae_linc/hydra/config.yaml
+small,bridge,geojepa_t_jan12_150e-T-MLP,0.18531468510627747,1m 59s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/bridge/geojepa_t_jan12_150e/geojepa_t_jan12_150e_mlpc/hydra/config.yaml
+small,bridge,geojepa_gt_300e-GT-MLP,0.18881118297576904,0m 39s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/bridge/geojepa_gt_300e/geojepa_gt_300e_mlpc/hydra/config.yaml
+small,bridge,geojepa_t_e1-T-MLP,0.18881118297576904,0m 34s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e1/geojepa_t_e1_mlpc/hydra/config.yaml
+small,bridge,geojepa_t_e2-T-LIN,0.19930069148540497,1m 57s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e2/geojepa_t_e2_linc/hydra/config.yaml
+small,bridge,geojepa_gt_300e-GT-LIN,0.19930069148540497,1m 56s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/bridge/geojepa_gt_300e/geojepa_gt_300e_linc/hydra/config.yaml
+small,bridge,geojepa_t_300e_jan13-T-MLP,0.20279720425605774,2m 6s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/bridge/geojepa_t_300e_jan13/geojepa_t_300e_jan13_mlpc/hydra/config.yaml
+small,bridge,geojepa_t_jan12_150e-T-LIN,0.20279720425605774,1m 55s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/bridge/geojepa_t_jan12_150e/geojepa_t_jan12_150e_linc/hydra/config.yaml
+small,bridge,geojepa_t_300e_jan13-T-LIN,0.21328671276569366,2m 30s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/bridge/geojepa_t_300e_jan13/geojepa_t_300e_jan13_linc/hydra/config.yaml
+small,bridge,geojepa_ti_jan14_300e-TI-LIN,0.21678321063518524,2m 10s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_linc/hydra/config.yaml
+small,bridge,geojepa_t_e3-T-MLP,0.220279723405838,0m 36s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/bridge/geojepa_t_e3/geojepa_t_e3_mlpc/hydra/config.yaml
+small,bridge,TagAE-MLP,0.22727271914482117,2m 29s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/bridge/tag_ae_dec_28/tag_ae_dec_28_mlpc/hydra/config.yaml
+small,bridge,geojepa_gti_170e-GTI-LIN,0.23076923191547394,1m 59s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/geojepa_gti_170e/geojepa_gti_170e_linc/hydra/config.yaml
+small,bridge,ViT-B/16-MLP,0.23426572978496552,2m 18s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/vitb16/vitb16_mlpc/hydra/config.yaml
+small,bridge,GPT-4o,0.2395989974937343,,,,,2025-01-08,remote-logs/eval_gpt/gpt_small/4o/bridge/hydra/config.yaml
+small,bridge,ScaleMAE-MLP,0.24125874042510986,2m 33s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/scalemae/scalemae_mlpc/hydra/config.yaml
+small,bridge,ViT-B/16-LIN,0.24125874042510986,2m 12s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/vitb16/vitb16_linc/hydra/config.yaml
+small,bridge,geojepa_gti_300e-GTI-LIN,0.24125874042510986,1m 13s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/bridge/geojepa_gti_300e/geojepa_gti_300e_linc/hydra/config.yaml
+small,bridge,geojepa_gti_300e-GTI-MLP,0.24125874042510986,0m 45s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/bridge/geojepa_gti_300e/geojepa_gti_300e_mlpc/hydra/config.yaml
+small,bridge,geojepa_ti_jan14_300e-TI-MLP,0.24125874042510986,2m 6s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_mlpc/hydra/config.yaml
+small,bridge,TagAE-LIN,0.24475523829460144,2m 11s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/tag_ae_dec_28/tag_ae_dec_28_linc/hydra/config.yaml
+small,bridge,AG-97M-600s,0.24810287356376648,12m 18s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/bridge/high-600s/hydra/config.yaml
+small,bridge,geojepa_ti_jan12_100e-TI-LIN,0.2482517510652542,1m 56s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/bridge/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_linc/hydra/config.yaml
+small,bridge,ScaleMAE-LIN,0.251748263835907,3m 39s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/bridge/scalemae/scalemae_linc/hydra/config.yaml
+small,bridge,geojepa_ti_jan12_100e-TI-MLP,0.25524476170539856,2m 0s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/bridge/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_mlpc/hydra/config.yaml
+small,bridge,geojepa_gti_170e-GTI-MLP,0.279720276594162,2m 3s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/bridge/geojepa_gti_170e/geojepa_gti_170e_mlpc/hydra/config.yaml
+small,bridge,AG-197M-3600s,0.2980254292488098,65m 33s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/bridge/best-3600s/hydra/config.yaml
+small,bridge,AG-4M-900s,0.32387879490852356,15m 46s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/bridge/medium-900s/hydra/config.yaml
+small,bridge,GPT-4o-mini,0.3486215538847118,,,,,2025-01-08,remote-logs/eval_gpt/gpt_small/4o-mini/bridge/hydra/config.yaml
+small,bridge,ResNet-MLP,0.3601398468017578,2m 51s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/resnet/resnet_mlpc/hydra/config.yaml
+small,bridge,ResNet-LIN,0.3601398468017578,2m 45s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/resnet/resnet_linc/hydra/config.yaml
+small,bridge,EfficientNet-MLP,0.3601398468017578,2m 36s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/efficientnet/efficientnet_mlpc/hydra/config.yaml
+small,bridge,EfficientNet-LIN,0.3601398468017578,2m 31s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/bridge/efficientnet/efficientnet_linc/hydra/config.yaml
+small,bridge,cheat_tagformer_ae-MLP,0.3601398468017578,0m 21s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/bridge/tagformer_ae/tagformer_ae_mlpc/hydra/config.yaml
+small,bridge,cheat_tagformer_ae-LIN,0.3601398468017578,0m 20s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/bridge/tagformer_ae/tagformer_ae_linc/hydra/config.yaml
+small,bridge,AG-4M-600s,0.3687072992324829,10m 47s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/bridge/medium-600s/hydra/config.yaml
+small,bridge,Dummy,0.66,,,,,2025-01-12,remote-logs/baselines/bridge/hydra/config.yaml
+small,building_count,Tagformer-S,1.4160025119781494,34m 12s,0.0006351152427934166,3.92399409164446e-05,0.000398389144369163,2025-01-09,remote-logs/logs/train/2025-01-09/09-05-17_tagformer_lr_opt_tagformer/6_tagformer_building_count_cheat/hydra/config.yaml
+small,building_count,geojepa_ti_jan12_100e-TI-MLP,3.945448398590088,2m 18s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/building_count/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_mlpr/hydra/config.yaml
+small,building_count,TagAE-MLP,4.16556978225708,3m 25s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/building_count/tag_ae_dec_28/tag_ae_dec_28_mlpr/hydra/config.yaml
+small,building_count,geojepa_gti_170e-GTI-MLP,5.1721343994140625,2m 20s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/geojepa_gti_170e/geojepa_gti_170e_mlpr/hydra/config.yaml
+small,building_count,geojepa_gt_300e_small_b-GT-MLP,5.390524387359619,2m 17s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_mlpr/hydra/config.yaml
+small,building_count,geojepa_gti_300e-GTI-MLP,5.515426158905029,1m 54s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/building_count/geojepa_gti_300e/geojepa_gti_300e_mlpr/hydra/config.yaml
+small,building_count,geojepa_ti_jan14_300e-TI-MLP,5.533742427825928,2m 22s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_mlpr/hydra/config.yaml
+small,building_count,geojepa_gt_300e-GT-MLP,5.9552531242370605,2m 19s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_gt_300e/geojepa_gt_300e_mlpr/hydra/config.yaml
+small,building_count,TagformerLMAE-MLP,6.8597798347473145,1m 42s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/building_count/tagformer_lmae_100e/tagformer_lmae_100e_mlpr/hydra/config.yaml
+small,building_count,geojepa_t_e3-T-MLP,7.008121013641357,2m 17s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e3/geojepa_t_e3_mlpr/hydra/config.yaml
+small,building_count,geojepa_t_e2-T-MLP,7.901110649108887,2m 18s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e2/geojepa_t_e2_mlpr/hydra/config.yaml
+small,building_count,geojepa_t_e1-T-MLP,8.298194885253906,2m 19s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e1/geojepa_t_e1_mlpr/hydra/config.yaml
+small,building_count,geojepa_t_300e_jan13-T-MLP,8.822603225708008,2m 58s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/building_count/geojepa_t_300e_jan13/geojepa_t_300e_jan13_mlpr/hydra/config.yaml
+small,building_count,geojepa_t_jan12_150e-T-MLP,9.308537483215332,2m 15s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/building_count/geojepa_t_jan12_150e/geojepa_t_jan12_150e_mlpr/hydra/config.yaml
+small,building_count,TagPool-MLP,9.388497352600098,2m 43s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/building_count/entity_tag_avg/entity_tag_avg_mlpr/hydra/config.yaml
+small,building_count,geojepa_ti_jan12_100e-TI-LIN,12.547064781188965,2m 13s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/building_count/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_linr/hydra/config.yaml
+small,building_count,geojepa_gti_300e-GTI-LIN,15.32177734375,2m 19s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/building_count/geojepa_gti_300e/geojepa_gti_300e_linr/hydra/config.yaml
+small,building_count,geojepa_gti_170e-GTI-LIN,15.367782592773438,2m 16s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/geojepa_gti_170e/geojepa_gti_170e_linr/hydra/config.yaml
+small,building_count,geojepa_ti_jan14_300e-TI-LIN,15.648270606994629,2m 26s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_linr/hydra/config.yaml
+small,building_count,TagAE-LIN,19.685754776000977,3m 18s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/building_count/tag_ae_dec_28/tag_ae_dec_28_linr/hydra/config.yaml
+small,building_count,geojepa_gt_300e_small_b-GT-LIN,20.45473289489746,2m 18s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/building_count/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_linr/hydra/config.yaml
+small,building_count,geojepa_t_e3-T-LIN,20.953081130981445,2m 13s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e3/geojepa_t_e3_linr/hydra/config.yaml
+small,building_count,geojepa_gt_300e-GT-LIN,21.212907791137695,2m 15s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/building_count/geojepa_gt_300e/geojepa_gt_300e_linr/hydra/config.yaml
+small,building_count,AG-97M-600s,21.468278884887695,11m 59s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/building_count/high-600s/hydra/config.yaml
+small,building_count,geojepa_t_e1-T-LIN,22.234262466430664,2m 15s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e1/geojepa_t_e1_linr/hydra/config.yaml
+small,building_count,TagformerLMAE-LIN,22.336410522460938,2m 4s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/building_count/tagformer_lmae_100e/tagformer_lmae_100e_linr/hydra/config.yaml
+small,building_count,geojepa_t_300e_jan13-T-LIN,22.928274154663086,2m 37s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/building_count/geojepa_t_300e_jan13/geojepa_t_300e_jan13_linr/hydra/config.yaml
+small,building_count,geojepa_t_jan12_150e-T-LIN,24.01419448852539,2m 11s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/building_count/geojepa_t_jan12_150e/geojepa_t_jan12_150e_linr/hydra/config.yaml
+small,building_count,ScaleMAE-MLP,24.436311721801758,4m 18s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/building_count/scalemae/scalemae_mlpr/hydra/config.yaml
+small,building_count,TagPool-LIN,25.93672752380371,2m 40s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/building_count/entity_tag_avg/entity_tag_avg_linr/hydra/config.yaml
+small,building_count,AG-4M-900s,26.57091522216797,15m 34s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/building_count/medium-900s/hydra/config.yaml
+small,building_count,geojepa_t_e2-T-LIN,26.9926815032959,2m 13s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/building_count/geojepa_t_e2/geojepa_t_e2_linr/hydra/config.yaml
+small,building_count,ViT-B/16-MLP,28.339359283447266,2m 37s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/vitb16/vitb16_mlpr/hydra/config.yaml
+small,building_count,ScaleMAE-LIN,29.36968421936035,3m 40s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/building_count/scalemae/scalemae_linr/hydra/config.yaml
+small,building_count,GPT-4o,29.919799498746865,,,,,2025-01-08,remote-logs/eval_gpt/gpt_small/4o/building_count/hydra/config.yaml
+small,building_count,AG-4M-600s,30.023786544799805,10m 34s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/building_count/medium-600s/hydra/config.yaml
+small,building_count,ViT-B/16-LIN,32.23971176147461,2m 31s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/vitb16/vitb16_linr/hydra/config.yaml
+small,building_count,GPT-4o-mini,36.94235588972431,,,,,2025-01-08,remote-logs/eval_gpt/gpt_small/4o-mini/building_count/hydra/config.yaml
+small,building_count,cheat_tagformer_ae-LIN,38.42430114746094,2m 4s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/building_count/tagformer_ae/tagformer_ae_linr/hydra/config.yaml
+small,building_count,EfficientNet-LIN,38.425113677978516,2m 53s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/efficientnet/efficientnet_linr/hydra/config.yaml
+small,building_count,ResNet-LIN,38.427494049072266,3m 11s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/resnet/resnet_linr/hydra/config.yaml
+small,building_count,EfficientNet-MLP,38.436100006103516,3m 0s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/efficientnet/efficientnet_mlpr/hydra/config.yaml
+small,building_count,ResNet-MLP,38.436317443847656,3m 18s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/building_count/resnet/resnet_mlpr/hydra/config.yaml
+small,building_count,cheat_tagformer_ae-MLP,38.44340133666992,0m 33s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/building_count/tagformer_ae/tagformer_ae_mlpr/hydra/config.yaml
+small,building_count,Dummy,45.14,,,,,2025-01-12,remote-logs/baselines/building_count/hydra/config.yaml
+small,car_bridge,Tagformer-S,0.010828740894794464,5m 48s,0.003232,1.92079e-05,0.002788918,2025-01-09,remote-logs/logs/train/2025-01-09/21-30-19_tagformer_car_bridge_cheat/hydra/config.yaml
+small,car_bridge,TagPool-MLP,0.06976743787527084,1m 1s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/entity_tag_avg/entity_tag_avg_mlpc/hydra/config.yaml
+small,car_bridge,TagPool-LIN,0.10963454842567444,0m 59s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/car_bridge/entity_tag_avg/entity_tag_avg_linc/hydra/config.yaml
+small,car_bridge,geojepa_t_e1-T-MLP,0.14617939293384552,0m 12s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e1/geojepa_t_e1_mlpc/hydra/config.yaml
+small,car_bridge,TagformerLMAE-MLP,0.14617939293384552,0m 51s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/car_bridge/tagformer_lmae/tagformer_lmae_mlpc/hydra/config.yaml
+small,car_bridge,geojepa_t_e1-T-LIN,0.15614616870880127,0m 40s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e1/geojepa_t_e1_linc/hydra/config.yaml
+small,car_bridge,geojepa_t_e2-T-MLP,0.17275747656822205,0m 52s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e2/geojepa_t_e2_mlpc/hydra/config.yaml
+small,car_bridge,geojepa_gt_300e-GT-MLP,0.1860465109348297,0m 21s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/car_bridge/geojepa_gt_300e/geojepa_gt_300e_mlpc/hydra/config.yaml
+small,car_bridge,geojepa_t_jan12_150e-T-MLP,0.18936876952648163,0m 51s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/car_bridge/geojepa_t_jan12_150e/geojepa_t_jan12_150e_mlpc/hydra/config.yaml
+small,car_bridge,geojepa_gt_300e_small_b-GT-MLP,0.19601328670978546,0m 18s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_mlpc/hydra/config.yaml
+small,car_bridge,geojepa_gt_300e-GT-LIN,0.2026578038930893,0m 37s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/car_bridge/geojepa_gt_300e/geojepa_gt_300e_linc/hydra/config.yaml
+small,car_bridge,geojepa_gt_300e_small_b-GT-LIN,0.2059800624847412,0m 29s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_linc/hydra/config.yaml
+small,car_bridge,geojepa_t_e3-T-MLP,0.20930232107639313,0m 16s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e3/geojepa_t_e3_mlpc/hydra/config.yaml
+small,car_bridge,geojepa_t_300e_jan13-T-LIN,0.21262457966804504,0m 52s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/car_bridge/geojepa_t_300e_jan13/geojepa_t_300e_jan13_linc/hydra/config.yaml
+small,car_bridge,geojepa_t_300e_jan13-T-MLP,0.21594683825969696,0m 53s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/car_bridge/geojepa_t_300e_jan13/geojepa_t_300e_jan13_mlpc/hydra/config.yaml
+small,car_bridge,geojepa_t_e2-T-LIN,0.21926909685134888,0m 50s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e2/geojepa_t_e2_linc/hydra/config.yaml
+small,car_bridge,ViT-B/16-MLP,0.21926909685134888,0m 59s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/vitb16/vitb16_mlpc/hydra/config.yaml
+small,car_bridge,TagformerLMAE-LIN,0.21926909685134888,0m 48s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/car_bridge/tagformer_lmae_100e/tagformer_lmae_100e_linc/hydra/config.yaml
+small,car_bridge,GPT-4o,0.22781954887218048,,,,,2025-01-08,remote-logs/eval_gpt/gpt_small/4o/car_bridge/hydra/config.yaml
+small,car_bridge,ViT-B/16-LIN,0.22923587262630463,0m 59s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/vitb16/vitb16_linc/hydra/config.yaml
+small,car_bridge,AG-97M-900s,0.23796576261520386,16m 28s,,,,2025-01-14,remote-logs/ag-logs/eval/2025-01-14/car_bridge/high-900s/hydra/config.yaml
+small,car_bridge,geojepa_t_e3-T-LIN,0.2425249069929123,0m 50s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/car_bridge/geojepa_t_e3/geojepa_t_e3_linc/hydra/config.yaml
+small,car_bridge,geojepa_ti_jan12_100e-TI-LIN,0.2425249069929123,0m 50s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/car_bridge/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_linc/hydra/config.yaml
+small,car_bridge,geojepa_ti_jan12_100e-TI-MLP,0.24916942417621613,0m 52s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/car_bridge/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_mlpc/hydra/config.yaml
+small,car_bridge,geojepa_gti_170e-GTI-MLP,0.25581395626068115,0m 53s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/geojepa_gti_170e/geojepa_gti_170e_mlpc/hydra/config.yaml
+small,car_bridge,AG-97M-600s,0.2568278908729553,11m 21s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/car_bridge/high-600s/hydra/config.yaml
+small,car_bridge,AG-197M-3600s,0.2573762834072113,63m 4s,,,,2025-01-15,remote-logs/ag-logs/eval/2025-01-15/car_bridge/best-3600s/hydra/config.yaml
+small,car_bridge,ScaleMAE-MLP,0.262458473443985,1m 6s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/scalemae/scalemae_mlpc/hydra/config.yaml
+small,car_bridge,geojepa_gti_300e-GTI-LIN,0.262458473443985,0m 53s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/car_bridge/geojepa_gti_300e/geojepa_gti_300e_linc/hydra/config.yaml
+small,car_bridge,geojepa_t_jan12_150e-T-LIN,0.262458473443985,0m 50s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/car_bridge/geojepa_t_jan12_150e/geojepa_t_jan12_150e_linc/hydra/config.yaml
+small,car_bridge,TagAE-MLP,0.2691029906272888,0m 58s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/tag_ae_dec_28/tag_ae_dec_28_mlpc/hydra/config.yaml
+small,car_bridge,ScaleMAE-LIN,0.27242523431777954,1m 4s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/scalemae/scalemae_linc/hydra/config.yaml
+small,car_bridge,geojepa_gti_300e-GTI-MLP,0.2857142686843872,0m 20s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/car_bridge/geojepa_gti_300e/geojepa_gti_300e_mlpc/hydra/config.yaml
+small,car_bridge,geojepa_ti_jan14_300e-TI-LIN,0.2857142686843872,0m 50s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_linc/hydra/config.yaml
+small,car_bridge,geojepa_ti_jan14_300e-TI-MLP,0.2890365421772003,0m 52s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_mlpc/hydra/config.yaml
+small,car_bridge,TagAE-LIN,0.2990033030509949,1m 9s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/car_bridge/tag_ae_dec_28/tag_ae_dec_28_linc/hydra/config.yaml
+small,car_bridge,geojepa_gti_170e-GTI-LIN,0.2990033030509949,0m 52s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/car_bridge/geojepa_gti_170e/geojepa_gti_170e_linc/hydra/config.yaml
+small,car_bridge,AG-4M-900s,0.3103153705596924,15m 20s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/car_bridge/medium-900s/hydra/config.yaml
+small,car_bridge,AG-4M-600s,0.32312822341918945,10m 21s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/car_bridge/medium-600s/hydra/config.yaml
+small,car_bridge,GPT-4o-mini,0.37443609022556384,,,,,2025-01-08,remote-logs/eval_gpt/gpt_small/4o-mini/car_bridge/hydra/config.yaml
+small,car_bridge,(M) Tagformer-S,0.4451827108860016,6m 17s,0.0067051824202799225,7.514175711585728e-05,0.0009645500052158861,2025-01-09,remote-logs/logs/train/2025-01-09/13-55-42_tagformer_lr_opt_tagformer/2_tagformer_car_bridge/hydra/config.yaml
+small,car_bridge,Tagformer-P,0.4451827108860016,17m 12s,0.003232,1.92079e-05,0.002788918,2025-01-09,remote-logs/logs/train/2025-01-09/19-57-02_tagformer_car_bridge_cheat/hydra/config.yaml
+small,car_bridge,ResNet-MLP,0.4451827108860016,1m 15s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/resnet/resnet_mlpc/hydra/config.yaml
+small,car_bridge,ResNet-LIN,0.4451827108860016,1m 12s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/resnet/resnet_linc/hydra/config.yaml
+small,car_bridge,EfficientNet-MLP,0.4451827108860016,1m 7s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/efficientnet/efficientnet_mlpc/hydra/config.yaml
+small,car_bridge,EfficientNet-LIN,0.4451827108860016,1m 5s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/car_bridge/efficientnet/efficientnet_linc/hydra/config.yaml
+small,car_bridge,cheat_tagformer_ae-MLP,0.4451827108860016,0m 9s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/car_bridge/tagformer_ae/tagformer_ae_mlpc/hydra/config.yaml
+small,car_bridge,cheat_tagformer_ae-LIN,0.4451827108860016,0m 9s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/car_bridge/tagformer_ae/tagformer_ae_linc/hydra/config.yaml
+small,car_bridge,Dummy,0.9,,,,,2025-01-12,remote-logs/baselines/car_bridge/hydra/config.yaml
+small,max_speed,geojepa_t_e1-T-MLP,9.534050941467285,2m 12s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e1/geojepa_t_e1_mlpr/hydra/config.yaml
+small,max_speed,(M) geojepa_t_e1-T-MLP,10.47655963897705,2m 20s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_t_e1_masked_max_speed/geojepa_t_e1_masked_max_speed_mlpr/hydra/config.yaml
+small,max_speed,geojepa_t_jan12_150e-T-MLP,10.688858985900879,2m 12s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/max_speed/geojepa_t_jan12_150e/geojepa_t_jan12_150e_mlpr/hydra/config.yaml
+small,max_speed,geojepa_t_300e_jan13-T-MLP,10.992897987365723,2m 54s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/max_speed/geojepa_t_300e_jan13/geojepa_t_300e_jan13_mlpr/hydra/config.yaml
+small,max_speed,TagPool-MLP,11.110772132873535,2m 38s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/max_speed/entity_tag_avg/entity_tag_avg_mlpr/hydra/config.yaml
+small,max_speed,(M) TagPool-MLP,12.064451217651367,2m 46s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/entity_tag_avg_masked_max_speed/entity_tag_avg_masked_max_speed_mlpr/hydra/config.yaml
+small,max_speed,geojepa_t_e3-T-MLP,12.237421035766602,1m 13s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e3/geojepa_t_e3_mlpr/hydra/config.yaml
+small,max_speed,(M) geojepa_t_300e_jan13-T-MLP,12.315866470336914,1m 33s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_t_300e_jan13_masked_max_speed/geojepa_t_300e_jan13_masked_max_speed_mlpr/hydra/config.yaml
+small,max_speed,geojepa_gt_300e_small_b-GT-MLP,12.868889808654785,1m 36s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_mlpr/hydra/config.yaml
+small,max_speed,geojepa_t_e2-T-MLP,14.264914512634277,2m 14s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e2/geojepa_t_e2_mlpr/hydra/config.yaml
+small,max_speed,TagformerLMAE-MLP,14.381583213806152,2m 9s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/max_speed/tagformer_lmae/tagformer_lmae_mlpr/hydra/config.yaml
+small,max_speed,AG-197M-3600s,15.94579955314423,66m 54s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/max_speed/best-3600s/hydra/config.yaml
+small,max_speed,geojepa_gt_300e-GT-MLP,16.07960319519043,1m 42s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/max_speed/geojepa_gt_300e/geojepa_gt_300e_mlpr/hydra/config.yaml
+small,max_speed,TagPool-LIN,16.754053115844727,2m 47s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/max_speed/entity_tag_avg/entity_tag_avg_linr/hydra/config.yaml
+small,max_speed,(M) TagPool-LIN,16.865375518798828,2m 44s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/max_speed/entity_tag_avg_masked_max_speed/entity_tag_avg_masked_max_speed_linr/hydra/config.yaml
+small,max_speed,(M) geojepa_gti_170e-GTI-MLP,17.494123458862305,2m 9s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_gti_170e_masked_max_speed/geojepa_gti_170e_masked_max_speed_mlpr/hydra/config.yaml
+small,max_speed,geojepa_gti_170e-GTI-MLP,18.008689880371094,2m 16s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/max_speed/geojepa_gti_170e/geojepa_gti_170e_mlpr/hydra/config.yaml
+small,max_speed,(M) geojepa_gti_300e-GTI-MLP,18.358566284179688,2m 9s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_gti_300e_masked_max_speed/geojepa_gti_300e_masked_max_speed_mlpr/hydra/config.yaml
+small,max_speed,geojepa_t_e1-T-LIN,18.55928611755371,2m 11s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e1/geojepa_t_e1_linr/hydra/config.yaml
+small,max_speed,geojepa_gti_300e-GTI-MLP,18.82497787475586,2m 13s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/max_speed/geojepa_gti_300e/geojepa_gti_300e_mlpr/hydra/config.yaml
+small,max_speed,geojepa_t_e3-T-LIN,18.93016815185547,2m 9s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e3/geojepa_t_e3_linr/hydra/config.yaml
+small,max_speed,ViT-B/16-MLP,19.147037506103516,2m 32s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/max_speed/vitb16/vitb16_mlpr/hydra/config.yaml
+small,max_speed,geojepa_t_jan12_150e-T-LIN,19.887500762939453,2m 7s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/max_speed/geojepa_t_jan12_150e/geojepa_t_jan12_150e_linr/hydra/config.yaml
+small,max_speed,geojepa_ti_jan12_100e-TI-MLP,20.450103759765625,2m 14s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/max_speed/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_mlpr/hydra/config.yaml
+small,max_speed,TagAE-MLP,20.51810646057129,3m 18s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/max_speed/tag_ae_dec_28/tag_ae_dec_28_mlpr/hydra/config.yaml
+small,max_speed,(M) geojepa_t_e1-T-LIN,20.539329528808594,2m 16s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_t_e1_masked_max_speed/geojepa_t_e1_masked_max_speed_linr/hydra/config.yaml
+small,max_speed,geojepa_ti_jan14_300e-TI-MLP,21.16060447692871,2m 13s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/max_speed/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_mlpr/hydra/config.yaml
+small,max_speed,geojepa_gt_300e_small_b-GT-LIN,21.392932891845703,2m 13s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/max_speed/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_linr/hydra/config.yaml
+small,max_speed,ScaleMAE-MLP,21.854520797729492,3m 11s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/max_speed/scalemae/scalemae_mlpr/hydra/config.yaml
+small,max_speed,geojepa_t_300e_jan13-T-LIN,22.39484214782715,2m 49s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/max_speed/geojepa_t_300e_jan13/geojepa_t_300e_jan13_linr/hydra/config.yaml
+small,max_speed,(M) geojepa_t_300e_jan13-T-LIN,22.528566360473633,2m 35s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_t_300e_jan13_masked_max_speed/geojepa_t_300e_jan13_masked_max_speed_linr/hydra/config.yaml
+small,max_speed,geojepa_gt_300e-GT-LIN,22.658161163330078,2m 11s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/max_speed/geojepa_gt_300e/geojepa_gt_300e_linr/hydra/config.yaml
+small,max_speed,geojepa_gti_300e-GTI-LIN,23.360824584960938,2m 15s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/max_speed/geojepa_gti_300e/geojepa_gti_300e_linr/hydra/config.yaml
+small,max_speed,(M) geojepa_gti_300e-GTI-LIN,23.385000228881836,2m 5s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_gti_300e_masked_max_speed/geojepa_gti_300e_masked_max_speed_linr/hydra/config.yaml
+small,max_speed,geojepa_t_e2-T-LIN,23.88398551940918,2m 9s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/max_speed/geojepa_t_e2/geojepa_t_e2_linr/hydra/config.yaml
+small,max_speed,geojepa_gti_170e-GTI-LIN,24.935585021972656,2m 12s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/max_speed/geojepa_gti_170e/geojepa_gti_170e_linr/hydra/config.yaml
+small,max_speed,(M) geojepa_gti_170e-GTI-LIN,24.958364486694336,2m 5s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/max_speed/geojepa_gti_170e_masked_max_speed/geojepa_gti_170e_masked_max_speed_linr/hydra/config.yaml
+small,max_speed,TagformerLMAE-LIN,25.220760345458984,2m 6s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/max_speed/tagformer_lmae/tagformer_lmae_linr/hydra/config.yaml
+small,max_speed,AG-4M-600s,25.921550916458347,10m 55s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/max_speed/medium-600s/hydra/config.yaml
+small,max_speed,AG-4M-900s,26.090638428814447,16m 2s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/max_speed/medium-900s/hydra/config.yaml
+small,max_speed,ViT-B/16-LIN,26.316062927246094,2m 27s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/max_speed/vitb16/vitb16_linr/hydra/config.yaml
+small,max_speed,geojepa_ti_jan12_100e-TI-LIN,26.730987548828125,2m 9s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/max_speed/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_linr/hydra/config.yaml
+small,max_speed,geojepa_ti_jan14_300e-TI-LIN,29.037982940673828,2m 9s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/max_speed/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_linr/hydra/config.yaml
+small,max_speed,ScaleMAE-LIN,31.927703857421875,2m 57s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/max_speed/scalemae/scalemae_linr/hydra/config.yaml
+small,max_speed,TagAE-LIN,35.658817291259766,2m 26s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/max_speed/tag_ae_dec_28/tag_ae_dec_28_linr/hydra/config.yaml
+small,max_speed,cheat_tagformer_ae-MLP,37.82905197143555,0m 30s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/max_speed/tagformer_ae/tagformer_ae_mlpr/hydra/config.yaml
+small,max_speed,ResNet-MLP,37.829833984375,3m 12s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/max_speed/resnet/resnet_mlpr/hydra/config.yaml
+small,max_speed,EfficientNet-MLP,37.83051300048828,3m 40s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/max_speed/efficientnet/efficientnet_mlpr/hydra/config.yaml
+small,max_speed,GPT-4o,39.33165829145729,,,,,2025-01-08,remote-logs/eval_gpt/gpt_small/4o/max_speed/hydra/config.yaml
+small,max_speed,Dummy,41.69,,,,,2025-01-12,remote-logs/baselines/max_speed/hydra/config.yaml
+small,max_speed,EfficientNet-LIN,63.93075180053711,2m 47s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/max_speed/efficientnet/efficientnet_linr/hydra/config.yaml
+small,max_speed,ResNet-LIN,63.93449401855469,3m 40s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/max_speed/resnet/resnet_linr/hydra/config.yaml
+small,max_speed,cheat_tagformer_ae-LIN,63.94259262084961,2m 6s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/max_speed/tagformer_ae/tagformer_ae_linr/hydra/config.yaml
+small,max_speed,GPT-4o-mini,70.97243107769424,,,,,2025-01-08,remote-logs/eval_gpt/gpt_small/4o-mini/max_speed/hydra/config.yaml
+small,traffic_signals,TagPool-MLP,1.3919811248779297,0m 60s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/entity_tag_avg/entity_tag_avg_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_t_e1-T-MLP,2.087768793106079,0m 28s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e1/geojepa_t_e1_mlpr/hydra/config.yaml
+small,traffic_signals,TagformerLMAE-MLP,2.1072771549224854,0m 48s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/traffic_signals/tagformer_lmae/tagformer_lmae_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_t_e3-T-MLP,2.2454025745391846,0m 32s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e3/geojepa_t_e3_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_gt_300e_small_b-GT-MLP,2.2658305168151855,0m 28s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/traffic_signals/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_t_e2-T-MLP,2.26947021484375,0m 50s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e2/geojepa_t_e2_mlpr/hydra/config.yaml
+small,traffic_signals,TagPool-LIN,2.2720723152160645,1m 4s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/traffic_signals/entity_tag_avg/entity_tag_avg_linr/hydra/config.yaml
+small,traffic_signals,geojepa_t_jan12_150e-T-MLP,2.3203165531158447,0m 49s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/traffic_signals/geojepa_t_jan12_150e/geojepa_t_jan12_150e_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_t_300e_jan13-T-MLP,2.435486078262329,1m 1s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/traffic_signals/geojepa_t_300e_jan13/geojepa_t_300e_jan13_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_gt_300e-GT-MLP,2.49206805229187,0m 30s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_gt_300e/geojepa_gt_300e_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_gti_170e-GTI-MLP,2.581645965576172,0m 51s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/geojepa_gti_170e/geojepa_gti_170e_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_ti_jan12_100e-TI-MLP,2.583418846130371,0m 50s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/traffic_signals/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_gti_300e-GTI-MLP,2.625811815261841,0m 21s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/traffic_signals/geojepa_gti_300e/geojepa_gti_300e_mlpr/hydra/config.yaml
+small,traffic_signals,(M) geojepa_t_e1-T-MLP,2.627028226852417,0m 24s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/traffic_signals/geojepa_t_e1_masked_traffic_signals/geojepa_t_e1_masked_traffic_signals_mlpr/hydra/config.yaml
+small,traffic_signals,(M) TagPool-MLP,2.6400511264801025,1m 3s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/entity_tag_avg_masked_traffic_signals/entity_tag_avg_masked_traffic_signals_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_ti_jan14_300e-TI-MLP,2.6508307456970215,0m 50s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_mlpr/hydra/config.yaml
+small,traffic_signals,TagAE-MLP,2.7375807762145996,1m 10s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/traffic_signals/tag_ae_dec_28/tag_ae_dec_28_mlpr/hydra/config.yaml
+small,traffic_signals,geojepa_t_e1-T-LIN,2.7680232524871826,0m 49s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e1/geojepa_t_e1_linr/hydra/config.yaml
+small,traffic_signals,AG-197M-3600s,2.793633460998535,63m 24s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/traffic_signals/best-3600s/hydra/config.yaml
+small,traffic_signals,TagAE-LIN,2.8063924312591553,1m 8s,,,,2025-01-09,remote-logs/logs/pytorch/2025-01-09/traffic_signals/tag_ae_dec_28/tag_ae_dec_28_linr/hydra/config.yaml
+small,traffic_signals,geojepa_ti_jan12_100e-TI-LIN,2.837676525115967,0m 48s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/traffic_signals/geojepa_ti_jan12_100e/geojepa_ti_jan12_100e_linr/hydra/config.yaml
+small,traffic_signals,geojepa_ti_jan14_300e-TI-LIN,2.846996307373047,0m 48s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/geojepa_ti_jan14_300e/geojepa_ti_jan14_300e_linr/hydra/config.yaml
+small,traffic_signals,geojepa_gti_300e-GTI-LIN,2.8644044399261475,0m 33s,,,,2025-01-16,remote-logs/logs/pytorch/2025-01-16/traffic_signals/geojepa_gti_300e/geojepa_gti_300e_linr/hydra/config.yaml
+small,traffic_signals,geojepa_gti_170e-GTI-LIN,2.868258476257324,0m 49s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/geojepa_gti_170e/geojepa_gti_170e_linr/hydra/config.yaml
+small,traffic_signals,geojepa_gt_300e_small_b-GT-LIN,2.880450487136841,0m 45s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_gt_300e_small_b/geojepa_gt_300e_small_b_linr/hydra/config.yaml
+small,traffic_signals,geojepa_t_e3-T-LIN,2.9035511016845703,0m 36s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e3/geojepa_t_e3_linr/hydra/config.yaml
+small,traffic_signals,geojepa_t_300e_jan13-T-LIN,2.9164037704467773,0m 49s,,,,2025-01-13,remote-logs/logs/pytorch/2025-01-13/traffic_signals/geojepa_t_300e_jan13/geojepa_t_300e_jan13_linr/hydra/config.yaml
+small,traffic_signals,geojepa_t_jan12_150e-T-LIN,2.9180872440338135,0m 47s,,,,2025-01-12,remote-logs/logs/pytorch/2025-01-12/traffic_signals/geojepa_t_jan12_150e/geojepa_t_jan12_150e_linr/hydra/config.yaml
+small,traffic_signals,(M) geojepa_t_300e_jan13-T-MLP,2.929488182067871,0m 38s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/traffic_signals/geojepa_t_300e_jan13_masked_traffic_signals/geojepa_t_300e_jan13_masked_traffic_signals_mlpr/hydra/config.yaml
+small,traffic_signals,ScaleMAE-MLP,2.938328266143799,1m 1s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/scalemae/scalemae_mlpr/hydra/config.yaml
+small,traffic_signals,TagformerLMAE-LIN,2.973129987716675,0m 33s,,,,2025-01-20,remote-logs/logs/pytorch/2025-01-20/traffic_signals/tagformer_lmae_100e/tagformer_lmae_100e_linr/hydra/config.yaml
+small,traffic_signals,geojepa_gt_300e-GT-LIN,2.9764819145202637,0m 38s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_gt_300e/geojepa_gt_300e_linr/hydra/config.yaml
+small,traffic_signals,GPT-4o,3.002680965147453,,,,,2025-01-08,remote-logs/eval_gpt/gpt_small/4o/traffic_signals/hydra/config.yaml
+small,traffic_signals,geojepa_t_e2-T-LIN,3.028181791305542,0m 48s,,,,2025-01-21,remote-logs/logs/pytorch/2025-01-21/traffic_signals/geojepa_t_e2/geojepa_t_e2_linr/hydra/config.yaml
+small,traffic_signals,ViT-B/16-MLP,3.1218881607055664,0m 58s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/vitb16/vitb16_mlpr/hydra/config.yaml
+small,traffic_signals,AG-4M-900s,3.1505863666534424,15m 24s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/traffic_signals/medium-900s/hydra/config.yaml
+small,traffic_signals,ViT-B/16-LIN,3.1540400981903076,0m 55s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/vitb16/vitb16_linr/hydra/config.yaml
+small,traffic_signals,ScaleMAE-LIN,3.2010436058044434,0m 59s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/scalemae/scalemae_linr/hydra/config.yaml
+small,traffic_signals,GPT-4o-mini,3.25201072386059,,,,,2025-01-08,remote-logs/eval_gpt/gpt_small/4o-mini/traffic_signals/hydra/config.yaml
+small,traffic_signals,AG-4M-600s,3.338987350463867,10m 26s,,,,2025-01-09,remote-logs/ag-logs/eval/2025-01-09/traffic_signals/medium-600s/hydra/config.yaml
+small,traffic_signals,(M) TagPool-LIN,3.3758485317230225,1m 1s,,,,2025-01-14,remote-logs/logs/pytorch/2025-01-14/traffic_signals/entity_tag_avg_masked_traffic_signals/entity_tag_avg_masked_traffic_signals_linr/hydra/config.yaml
+small,traffic_signals,(M) geojepa_t_e1-T-LIN,3.6296744346618652,0m 48s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/traffic_signals/geojepa_t_e1_masked_traffic_signals/geojepa_t_e1_masked_traffic_signals_linr/hydra/config.yaml
+small,traffic_signals,(M) geojepa_t_300e_jan13-T-LIN,3.654865026473999,0m 34s,,,,2025-01-27,remote-logs/logs/pytorch/2025-01-27/traffic_signals/geojepa_t_300e_jan13_masked_traffic_signals/geojepa_t_300e_jan13_masked_traffic_signals_linr/hydra/config.yaml
+small,traffic_signals,cheat_tagformer_ae-MLP,3.9239020347595215,0m 21s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/traffic_signals/tagformer_ae/tagformer_ae_mlpr/hydra/config.yaml
+small,traffic_signals,EfficientNet-MLP,3.92392635345459,1m 6s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/efficientnet/efficientnet_mlpr/hydra/config.yaml
+small,traffic_signals,ResNet-MLP,3.9239501953125,1m 12s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/resnet/resnet_mlpr/hydra/config.yaml
+small,traffic_signals,EfficientNet-LIN,3.9243876934051514,1m 3s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/efficientnet/efficientnet_linr/hydra/config.yaml
+small,traffic_signals,ResNet-LIN,3.924422025680542,1m 9s,,,,2025-01-10,remote-logs/logs/pytorch/2025-01-10/traffic_signals/resnet/resnet_linr/hydra/config.yaml
+small,traffic_signals,cheat_tagformer_ae-LIN,3.9245071411132812,0m 47s,,,,2025-01-15,remote-logs/logs/pytorch/2025-01-15/traffic_signals/tagformer_ae/tagformer_ae_linr/hydra/config.yaml
+small,traffic_signals,Dummy,4.78,,,,,2025-01-12,remote-logs/baselines/traffic_signals/hydra/config.yaml
+tiny,bridge,geojepa_gti_dec30-GTI-LIN,0.15625,2m 4s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_gti_dec30/geojepa_gti_dec30_linc/hydra/config.yaml
+tiny,bridge,ScaleMAE-LIN,0.21875,2m 58s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/scalemae/scalemae_linc/hydra/config.yaml
+tiny,bridge,TagAE-LIN,0.25,1m 52s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/tag_ae_dec_28/tag_ae_dec_28_linc/hydra/config.yaml
+tiny,bridge,geojepa_t_jan06-T-LIN,0.25,2m 20s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan06/geojepa_t_jan06_linc/hydra/config.yaml
+tiny,bridge,-T-MLP,0.25,0m 16s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_mlpc/hydra/config.yaml
+tiny,bridge,-TI-LIN,0.25,1m 15s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_ti_jan06/geojepa_ti_jan06/_linc/hydra/config.yaml
+tiny,bridge,ScaleMAE-MLP,0.28125,3m 2s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/scalemae/scalemae_mlpc/hydra/config.yaml
+tiny,bridge,-T-LIN,0.28125,0m 42s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_linc/hydra/config.yaml
+tiny,bridge,ViT-B/16-LIN,0.28125,0m 29s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/vitb16/vitb16_linc/hydra/config.yaml
+tiny,bridge,ViT-B/16-MLP,0.28125,0m 14s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/vitb16/vitb16_mlpc/hydra/config.yaml
+tiny,bridge,geojepa_ti_jan06-TI-LIN,0.28125,2m 14s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_ti_jan06/geojepa_ti_jan06_linc/hydra/config.yaml
+tiny,bridge,geojepa_gti_dec30-GTI-MLP,0.3125,0m 41s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_gti_dec30/geojepa_gti_dec30_mlpc/hydra/config.yaml
+tiny,bridge,geojepa_ti_jan06-TI-MLP,0.3125,2m 6s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_ti_jan06/geojepa_ti_jan06_mlpc/hydra/config.yaml
+tiny,bridge,ViT-B/16,0.33712759613990784,2m 33s,0.0021251467576750933,6.10952526173518e-05,0.0017870385642347753,2025-01-03,remote-logs/logs/train/2025-01-03/12-49-13_lr_opt_embedding_lookup/1_embedding_lookup_bridge_cheat/hydra/config.yaml
+tiny,bridge,TagAE-MLP,0.34375,1m 30s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/tag_ae_dec_28/tag_ae_dec_28_mlpc/hydra/config.yaml
+tiny,bridge,geojepa_t_jan04-T-MLP,0.375,0m 24s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan04/geojepa_t_jan04_mlpc/hydra/config.yaml
+tiny,bridge,geojepa_t_jan06-T-MLP,0.375,2m 24s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan06/geojepa_t_jan06_mlpc/hydra/config.yaml
+tiny,bridge,-TI-MLP,0.375,0m 42s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_ti_jan06/geojepa_ti_jan06/_mlpc/hydra/config.yaml
+tiny,bridge,geojepa_t_jan04-T-LIN,0.40625,1m 38s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/bridge/geojepa_t_jan04/geojepa_t_jan04_linc/hydra/config.yaml
+tiny,building_count,Tagformer-P,0.947479248046875,11m 5s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-06,remote-logs/logs/train/2025-01-06/18-50-50_tagformer_lr_opt_tagformer/4_tagformer_building_count_cheat/hydra/config.yaml
+tiny,building_count,Tagformer-S,1.800323486328125,17m 32s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-06,remote-logs/logs/train/2025-01-06/14-23-50_tagformer_lr_opt_tagformer/4_tagformer_building_count_cheat/hydra/config.yaml
+tiny,building_count,Tagformer-SP,2.47833251953125,12m 32s,0.0009549131424258037,3.2951277968201005e-05,0.0026586792836830004,2025-01-06,remote-logs/logs/train/2025-01-06/16-11-57_tagformer_lr_opt_tagformer/5_tagformer_building_count_cheat/hydra/config.yaml
+tiny,building_count,TagAE-MLP,3.67169451713562,2m 41s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/tag_ae_dec_28/tag_ae_dec_28_mlpr/hydra/config.yaml
+tiny,building_count,Tagformer,5.5588531494140625,10m 18s,0.007815310443307435,2.933579918429705e-05,0.0011815678086390805,2025-01-06,remote-logs/logs/train/2025-01-06/17-15-38_tagformer_lr_opt_tagformer/9_tagformer_building_count_cheat/hydra/config.yaml
+tiny,building_count,-TI-MLP,6.22879695892334,2m 35s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_ti_jan06/geojepa_ti_jan06/_mlpr/hydra/config.yaml
+tiny,building_count,geojepa_ti_jan06-TI-MLP,6.373205661773682,2m 49s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_ti_jan06/geojepa_ti_jan06_mlpr/hydra/config.yaml
+tiny,building_count,geojepa_t_jan04-T-MLP,8.436290740966797,2m 44s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan04/geojepa_t_jan04_mlpr/hydra/config.yaml
+tiny,building_count,geojepa_t_jan06-T-MLP,10.569658279418945,2m 47s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan06/geojepa_t_jan06_mlpr/hydra/config.yaml
+tiny,building_count,geojepa_gti_dec30-GTI-MLP,13.172035217285156,2m 38s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_gti_dec30/geojepa_gti_dec30_mlpr/hydra/config.yaml
+tiny,building_count,geojepa_ti_jan06-TI-LIN,15.764238357543945,2m 30s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_ti_jan06/geojepa_ti_jan06_linr/hydra/config.yaml
+tiny,building_count,-TI-LIN,15.83178997039795,2m 42s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_ti_jan06/geojepa_ti_jan06/_linr/hydra/config.yaml
+tiny,building_count,geojepa_t_jan04-T-LIN,18.964820861816406,2m 51s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan04/geojepa_t_jan04_linr/hydra/config.yaml
+tiny,building_count,-T-MLP,21.040563583374023,1m 50s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_mlpr/hydra/config.yaml
+tiny,building_count,TagCountMLP,23.43699836730957,4m 11s,0.009648693745382655,6.878593871844138e-05,0.0022469710059642017,2025-01-06,remote-logs/logs/train/2025-01-06/20-19-12_lr_opt_tagcountencoder/2_tagcountencoder_building_count_cheat/hydra/config.yaml
+tiny,building_count,geojepa_t_jan06-T-LIN,28.110857009887695,2m 41s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan06/geojepa_t_jan06_linr/hydra/config.yaml
+tiny,building_count,-T-LIN,29.723033905029297,2m 60s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_linr/hydra/config.yaml
+tiny,building_count,geojepa_gti_dec30-GTI-LIN,36.445457458496094,2m 51s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/geojepa_gti_dec30/geojepa_gti_dec30_linr/hydra/config.yaml
+tiny,building_count,TagAE-LIN,36.94862365722656,2m 35s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/tag_ae_dec_28/tag_ae_dec_28_linr/hydra/config.yaml
+tiny,building_count,ScaleMAE-MLP,37.015316009521484,2m 43s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/scalemae/scalemae_mlpr/hydra/config.yaml
+tiny,building_count,(M) TagCountMLP,45.680419921875,2m 37s,0.009648693745382655,6.878593871844138e-05,0.0022469710059642017,2025-01-07,remote-logs/logs/train/2025-01-07/01-03-02_lr_opt_tagcountencoder/2_tagcountencoder_building_count/hydra/config.yaml
+tiny,building_count,(M) Tagformer,51.4892578125,6m 8s,0.003335881863822928,2.9500537666804676e-05,0.0024771666465786602,2025-01-07,remote-logs/logs/train/2025-01-06/23-09-56_tagformer_lr_opt_tagformer/9_tagformer_building_count/hydra/config.yaml
+tiny,building_count,(M) Tagformer-P,54.123291015625,6m 28s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-07,remote-logs/logs/train/2025-01-07/00-06-23_tagformer_lr_opt_tagformer/4_tagformer_building_count/hydra/config.yaml
+tiny,building_count,(M) Tagformer-S,61.16162109375,8m 43s,0.0028347264176566394,3.2951277968201005e-05,0.0026586792836830004,2025-01-06,remote-logs/logs/train/2025-01-06/21-03-45_tagformer_lr_opt_tagformer/5_tagformer_building_count/hydra/config.yaml
+tiny,building_count,(M) Tagformer-SP,62.313720703125,6m 56s,0.0002804378583909821,4.5549278796124594e-05,0.0029732620150982707,2025-01-06,remote-logs/logs/train/2025-01-06/22-18-52_tagformer_lr_opt_tagformer/7_tagformer_building_count/hydra/config.yaml
+tiny,building_count,ViT-B/16,64.29144287109375,2m 26s,0.00014879371572332906,3.848434155992013e-05,0.001103935870928702,2025-01-03,remote-logs/logs/train/2025-01-03/11-17-20_lr_opt_embedding_lookup/7_embedding_lookup_building_count_cheat/hydra/config.yaml
+tiny,building_count,AG-197M-3600s,65.15743255615234,64m 23s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/building_count/best-3600s/hydra/config.yaml
+tiny,building_count,AG-97M-900s,68.5831527709961,17m 16s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/building_count/high-900s/hydra/config.yaml
+tiny,building_count,AG-4M-600s,77.35501098632812,10m 32s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/building_count/medium-600s/hydra/config.yaml
+tiny,building_count,AG-97M-600s,79.14253997802734,11m 44s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/building_count/high-600s/hydra/config.yaml
+tiny,building_count,AG-4M-900s,82.11198425292969,15m 33s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/building_count/medium-900s/hydra/config.yaml
+tiny,building_count,ViT-B/16-LIN,89.61363983154297,2m 11s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/vitb16/vitb16_linr/hydra/config.yaml
+tiny,building_count,ScaleMAE-LIN,108.09496307373047,2m 34s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/scalemae/scalemae_linr/hydra/config.yaml
+tiny,building_count,ViT-B/16-MLP,110.81005859375,0m 33s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/building_count/vitb16/vitb16_mlpr/hydra/config.yaml
+tiny,car_bridge,Tagformer-P,0.0007171630859375,3m 49s,0.00010672254889812342,4.121030312952957e-05,0.0002492283183793397,2025-01-07,remote-logs/logs/train/2025-01-07/02-56-15_tagformer_lr_opt_tagformer/6_tagformer_car_bridge_cheat/hydra/config.yaml
+tiny,car_bridge,Tagformer-S,0.00103759765625,6m 13s,0.00011147042903096767,6.497684999534613e-05,0.0010722281521696208,2025-01-07,remote-logs/logs/train/2025-01-07/01-30-58_tagformer_lr_opt_tagformer/8_tagformer_car_bridge_cheat/hydra/config.yaml
+tiny,car_bridge,Tagformer,0.001190185546875,5m 14s,0.00022117261150643138,3.733966164892696e-05,6.208007546559515e-05,2025-01-07,remote-logs/logs/train/2025-01-07/02-35-36_tagformer_lr_opt_tagformer/5_tagformer_car_bridge_cheat/hydra/config.yaml
+tiny,car_bridge,Tagformer-SP,0.002105712890625,4m 45s,0.003566876206495317,3.90220139678732e-06,0.0013613746661855634,2025-01-07,remote-logs/logs/train/2025-01-07/02-18-44_tagformer_lr_opt_tagformer/9_tagformer_car_bridge_cheat/hydra/config.yaml
+tiny,car_bridge,TagCountMLP,0.033416748046875,1m 48s,0.009964614669997835,9.515962290251638e-05,0.0021997515008536214,2025-01-07,remote-logs/logs/train/2025-01-07/03-26-26_lr_opt_tagcountencoder/4_tagcountencoder_car_bridge_cheat/hydra/config.yaml
+tiny,car_bridge,ViT-B/16-MLP,0.15625,0m 6s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/vitb16/vitb16_mlpc/hydra/config.yaml
+tiny,car_bridge,(M) Tagformer-SP,0.1875,1m 9s,0.009616936687120931,1.8304414962137956e-06,0.0022433967130045503,2025-01-07,remote-logs/logs/train/2025-01-07/04-26-22_tagformer_lr_opt_tagformer/2_tagformer_car_bridge/hydra/config.yaml
+tiny,car_bridge,(M) Tagformer-S,0.1875,2m 25s,0.009616936687120931,1.8304414962137956e-06,0.0022433967130045503,2025-01-07,remote-logs/logs/train/2025-01-07/03-45-57_tagformer_lr_opt_tagformer/2_tagformer_car_bridge/hydra/config.yaml
+tiny,car_bridge,(M) Tagformer,0.1875,1m 17s,0.009616936687120931,1.8304414962137956e-06,0.0022433967130045503,2025-01-07,remote-logs/logs/train/2025-01-07/04-53-17_tagformer_lr_opt_tagformer/2_tagformer_car_bridge/hydra/config.yaml
+tiny,car_bridge,(M) Tagformer-P,0.1875,1m 19s,0.00636388149843529,6.404378236361872e-05,0.0009558633372677634,2025-01-07,remote-logs/logs/train/2025-01-07/05-22-54_tagformer_lr_opt_tagformer/8_tagformer_car_bridge/hydra/config.yaml
+tiny,car_bridge,(M) TagCountMLP,0.1875,1m 48s,0.00799255616523366,7.407363456309807e-05,0.0020997185010505114,2025-01-07,remote-logs/logs/train/2025-01-07/05-49-23_lr_opt_tagcountencoder/8_tagcountencoder_car_bridge/hydra/config.yaml
+tiny,car_bridge,geojepa_t_jan06-T-LIN,0.1875,1m 1s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan06/geojepa_t_jan06_linc/hydra/config.yaml
+tiny,car_bridge,geojepa_t_jan06-T-MLP,0.21875,1m 2s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan06/geojepa_t_jan06_mlpc/hydra/config.yaml
+tiny,car_bridge,-T-LIN,0.28125,0m 21s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_linc/hydra/config.yaml
+tiny,car_bridge,geojepa_gti_dec30-GTI-LIN,0.34375,0m 55s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_gti_dec30/geojepa_gti_dec30_linc/hydra/config.yaml
+tiny,car_bridge,-TI-MLP,0.34375,0m 23s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_ti_jan06/geojepa_ti_jan06/_mlpc/hydra/config.yaml
+tiny,car_bridge,ViT-B/16,0.3606605529785156,1m 27s,0.004756949703363013,1.3600838484148418e-05,0.000593114445930384,2025-01-03,remote-logs/logs/train/2025-01-03/12-33-25_lr_opt_embedding_lookup/5_embedding_lookup_car_bridge_cheat/hydra/config.yaml
+tiny,car_bridge,ScaleMAE-LIN,0.375,0m 59s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/scalemae/scalemae_linc/hydra/config.yaml
+tiny,car_bridge,geojepa_gti_dec30-GTI-MLP,0.375,0m 22s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_gti_dec30/geojepa_gti_dec30_mlpc/hydra/config.yaml
+tiny,car_bridge,ViT-B/16-LIN,0.375,0m 21s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/vitb16/vitb16_linc/hydra/config.yaml
+tiny,car_bridge,TagAE-LIN,0.40625,1m 6s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/tag_ae_dec_28/tag_ae_dec_28_linc/hydra/config.yaml
+tiny,car_bridge,-T-MLP,0.40625,0m 7s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_mlpc/hydra/config.yaml
+tiny,car_bridge,geojepa_t_jan04-T-LIN,0.4375,0m 43s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan04/geojepa_t_jan04_linc/hydra/config.yaml
+tiny,car_bridge,geojepa_t_jan04-T-MLP,0.4375,0m 14s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_t_jan04/geojepa_t_jan04_mlpc/hydra/config.yaml
+tiny,car_bridge,ScaleMAE-MLP,0.4375,0m 55s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/scalemae/scalemae_mlpc/hydra/config.yaml
+tiny,car_bridge,geojepa_ti_jan06-TI-MLP,0.4375,1m 3s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_ti_jan06/geojepa_ti_jan06_mlpc/hydra/config.yaml
+tiny,car_bridge,geojepa_ti_jan06-TI-LIN,0.46875,1m 2s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_ti_jan06/geojepa_ti_jan06_linc/hydra/config.yaml
+tiny,car_bridge,-TI-LIN,0.5,0m 43s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/geojepa_ti_jan06/geojepa_ti_jan06/_linc/hydra/config.yaml
+tiny,car_bridge,TagAE-MLP,0.53125,1m 4s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/car_bridge/tag_ae_dec_28/tag_ae_dec_28_mlpc/hydra/config.yaml
+tiny,max_speed,Tagformer-P,5.393798828125,12m 46s,0.009524071757754932,2.1302501799127377e-06,0.0012292475038193666,2025-01-07,remote-logs/logs/train/2025-01-07/12-38-58_tagformer_lr_opt_tagformer/7_tagformer_max_speed_cheat/hydra/config.yaml
+tiny,max_speed,Tagformer-SP,10.828125,11m 25s,0.0009456138575075577,4.8174788237396595e-05,0.0009553227438966637,2025-01-07,remote-logs/logs/train/2025-01-07/11-33-20_tagformer_lr_opt_tagformer/5_tagformer_max_speed_cheat/hydra/config.yaml
+tiny,max_speed,Tagformer-S,12.76708984375,12m 48s,0.0028371221011146428,6.49031097775222e-05,0.0024771666465786602,2025-01-07,remote-logs/logs/train/2025-01-07/09-59-49_tagformer_lr_opt_tagformer/9_tagformer_max_speed_cheat/hydra/config.yaml
+tiny,max_speed,TagCountMLP,16.64697265625,4m 8s,0.00799255616523366,7.407363456309807e-05,0.0020997185010505114,2025-01-07,remote-logs/logs/train/2025-01-07/14-20-34_lr_opt_tagcountencoder/8_tagcountencoder_max_speed_cheat/hydra/config.yaml
+tiny,max_speed,(M) Tagformer,28.8349609375,14m 29s,0.0032321179903596806,1.920796235603235e-05,0.0027889186623586263,2025-01-07,remote-logs/logs/train/2025-01-07/17-06-15_tagformer_lr_opt_tagformer/0_tagformer_max_speed/hydra/config.yaml
+tiny,max_speed,(M) TagCountMLP,29.521484375,4m 59s,0.009303199318889763,3.847379991236073e-05,0.0005525725162196063,2025-01-07,remote-logs/logs/train/2025-01-07/17-49-31_lr_opt_tagcountencoder/0_tagcountencoder_max_speed/hydra/config.yaml
+tiny,max_speed,(M) Tagformer-P,29.8974609375,14m 38s,0.0032321179903596806,1.920796235603235e-05,0.0027889186623586263,2025-01-07,remote-logs/logs/train/2025-01-07/17-29-35_tagformer_lr_opt_tagformer/0_tagformer_max_speed/hydra/config.yaml
+tiny,max_speed,(M) Tagformer-S,30.462890625,11m 53s,0.0002804378583909821,6.224540612944221e-05,0.0010136614192700658,2025-01-07,remote-logs/logs/train/2025-01-07/15-04-22_tagformer_lr_opt_tagformer/7_tagformer_max_speed/hydra/config.yaml
+tiny,max_speed,geojepa_t_jan06-T-MLP,33.93915939331055,2m 44s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan06/geojepa_t_jan06_mlpr/hydra/config.yaml
+tiny,max_speed,geojepa_t_jan06-T-LIN,34.82957458496094,2m 37s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan06/geojepa_t_jan06_linr/hydra/config.yaml
+tiny,max_speed,ScaleMAE-MLP,37.43614959716797,2m 47s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/scalemae/scalemae_mlpr/hydra/config.yaml
+tiny,max_speed,geojepa_ti_jan06-TI-MLP,38.216697692871094,2m 40s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_ti_jan06/geojepa_ti_jan06_mlpr/hydra/config.yaml
+tiny,max_speed,ViT-B/16-MLP,38.569549560546875,0m 45s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/vitb16/vitb16_mlpr/hydra/config.yaml
+tiny,max_speed,-TI-MLP,38.573238372802734,3m 1s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_ti_jan06/geojepa_ti_jan06/_mlpr/hydra/config.yaml
+tiny,max_speed,geojepa_ti_jan06-TI-LIN,38.81692886352539,2m 41s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_ti_jan06/geojepa_ti_jan06_linr/hydra/config.yaml
+tiny,max_speed,ViT-B/16,39.11328125,2m 45s,0.009964614669997835,9.515962290251638e-05,0.0021997515008536214,2025-01-03,remote-logs/logs/train/2025-01-03/12-03-01_lr_opt_embedding_lookup/4_embedding_lookup_max_speed_cheat/hydra/config.yaml
+tiny,max_speed,ScaleMAE-LIN,39.40175247192383,2m 21s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/scalemae/scalemae_linr/hydra/config.yaml
+tiny,max_speed,-TI-LIN,39.67665481567383,3m 4s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_ti_jan06/geojepa_ti_jan06/_linr/hydra/config.yaml
+tiny,max_speed,geojepa_t_jan04-T-MLP,39.766021728515625,2m 5s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan04/geojepa_t_jan04_mlpr/hydra/config.yaml
+tiny,max_speed,geojepa_gti_dec30-GTI-MLP,40.05601501464844,2m 52s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_gti_dec30/geojepa_gti_dec30_mlpr/hydra/config.yaml
+tiny,max_speed,geojepa_t_jan04-T-LIN,40.329872131347656,2m 46s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan04/geojepa_t_jan04_linr/hydra/config.yaml
+tiny,max_speed,AG-4M-900s,40.99518585205078,15m 49s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/max_speed/medium-900s/hydra/config.yaml
+tiny,max_speed,-T-MLP,41.772071838378906,1m 7s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_mlpr/hydra/config.yaml
+tiny,max_speed,ViT-B/16-LIN,41.807373046875,2m 8s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/vitb16/vitb16_linr/hydra/config.yaml
+tiny,max_speed,AG-4M-600s,42.44297409057617,10m 53s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/max_speed/medium-600s/hydra/config.yaml
+tiny,max_speed,geojepa_gti_dec30-GTI-LIN,42.544342041015625,2m 37s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_gti_dec30/geojepa_gti_dec30_linr/hydra/config.yaml
+tiny,max_speed,-T-LIN,42.83513641357422,3m 2s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_linr/hydra/config.yaml
+tiny,max_speed,(M) Tagformer-SP,43.0,3m 3s,0.007815310443307435,3.0939496767721315e-05,0.001808593777840006,2025-01-07,remote-logs/logs/train/2025-01-07/16-33-50_tagformer_lr_opt_tagformer/9_tagformer_max_speed/hydra/config.yaml
+tiny,max_speed,TagAE-MLP,43.33202362060547,2m 49s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/tag_ae_dec_28/tag_ae_dec_28_mlpr/hydra/config.yaml
+tiny,max_speed,TagAE-LIN,43.748172760009766,2m 32s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/max_speed/tag_ae_dec_28/tag_ae_dec_28_linr/hydra/config.yaml
+tiny,traffic_signals,Tagformer-S,0.06787109375,6m 42s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-07,remote-logs/logs/train/2025-01-07/06-08-53_tagformer_lr_opt_tagformer/4_tagformer_traffic_signals_cheat/hydra/config.yaml
+tiny,traffic_signals,Tagformer-SP,0.09027099609375,5m 11s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-07,remote-logs/logs/train/2025-01-07/06-54-21_tagformer_lr_opt_tagformer/4_tagformer_traffic_signals_cheat/hydra/config.yaml
+tiny,traffic_signals,TagCountMLP,0.773284912109375,1m 54s,0.009648693745382655,6.878593871844138e-05,0.0022469710059642017,2025-01-07,remote-logs/logs/train/2025-01-07/07-36-47_lr_opt_tagcountencoder/2_tagcountencoder_traffic_signals_cheat/hydra/config.yaml
+tiny,traffic_signals,geojepa_t_jan06-T-LIN,1.498598337173462,0m 58s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan06/geojepa_t_jan06_linr/hydra/config.yaml
+tiny,traffic_signals,geojepa_t_jan06-T-MLP,1.5855529308319092,0m 60s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan06/geojepa_t_jan06_mlpr/hydra/config.yaml
+tiny,traffic_signals,(M) Tagformer-SP,1.71002197265625,5m 10s,0.0002804378583909821,4.5549278796124594e-05,0.0029732620150982707,2025-01-07,remote-logs/logs/train/2025-01-07/08-56-42_tagformer_lr_opt_tagformer/7_tagformer_traffic_signals/hydra/config.yaml
+tiny,traffic_signals,(M) Tagformer-S,1.7471950054168701,7m 8s,0.001225547280836124,1.724342929754552e-05,8.096477791275981e-05,2025-01-07,remote-logs/logs/train/2025-01-07/07-57-17_tagformer_lr_opt_tagformer/4_tagformer_traffic_signals/hydra/config.yaml
+tiny,traffic_signals,(M) TagCountMLP,1.8587837219238281,2m 7s,0.004756949703363013,1.1864899624130618e-05,3.700439907907894e-05,2025-01-07,remote-logs/logs/train/2025-01-07/09-37-23_lr_opt_tagcountencoder/5_tagcountencoder_traffic_signals/hydra/config.yaml
+tiny,traffic_signals,-T-MLP,1.8666510581970215,0m 9s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_mlpr/hydra/config.yaml
+tiny,traffic_signals,geojepa_gti_dec30-GTI-MLP,2.0850610733032227,0m 30s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_gti_dec30/geojepa_gti_dec30_mlpr/hydra/config.yaml
+tiny,traffic_signals,-T-LIN,2.108790397644043,0m 26s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan04_avgmax/geojepa_t_jan04_avgmax/_linr/hydra/config.yaml
+tiny,traffic_signals,geojepa_gti_dec30-GTI-LIN,2.110741138458252,1m 10s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_gti_dec30/geojepa_gti_dec30_linr/hydra/config.yaml
+tiny,traffic_signals,geojepa_ti_jan06-TI-LIN,2.1597437858581543,0m 59s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_ti_jan06/geojepa_ti_jan06_linr/hydra/config.yaml
+tiny,traffic_signals,-TI-MLP,2.1615920066833496,0m 23s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_ti_jan06/geojepa_ti_jan06/_mlpr/hydra/config.yaml
+tiny,traffic_signals,geojepa_t_jan04-T-LIN,2.189509153366089,1m 11s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan04/geojepa_t_jan04_linr/hydra/config.yaml
+tiny,traffic_signals,-TI-LIN,2.229043483734131,0m 56s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_ti_jan06/geojepa_ti_jan06/_linr/hydra/config.yaml
+tiny,traffic_signals,ScaleMAE-MLP,2.375,1m 1s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/scalemae/scalemae_mlpr/hydra/config.yaml
+tiny,traffic_signals,ScaleMAE-LIN,2.375,0m 52s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/scalemae/scalemae_linr/hydra/config.yaml
+tiny,traffic_signals,geojepa_ti_jan06-TI-MLP,2.375,1m 1s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_ti_jan06/geojepa_ti_jan06_mlpr/hydra/config.yaml
+tiny,traffic_signals,geojepa_t_jan04-T-MLP,2.3951845169067383,0m 22s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/geojepa_t_jan04/geojepa_t_jan04_mlpr/hydra/config.yaml
+tiny,traffic_signals,TagAE-LIN,2.5089547634124756,1m 10s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/tag_ae_dec_28/tag_ae_dec_28_linr/hydra/config.yaml
+tiny,traffic_signals,TagAE-MLP,2.549893379211426,0m 31s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/tag_ae_dec_28/tag_ae_dec_28_mlpr/hydra/config.yaml
+tiny,traffic_signals,ViT-B/16-LIN,2.6619696617126465,0m 21s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/vitb16/vitb16_linr/hydra/config.yaml
+tiny,traffic_signals,ViT-B/16,2.79534912109375,1m 35s,0.007845428044588194,4.0373223860261865e-05,0.0017747494635337226,2025-01-03,remote-logs/logs/train/2025-01-03/11-44-59_lr_opt_embedding_lookup/8_embedding_lookup_traffic_signals_cheat/hydra/config.yaml
+tiny,traffic_signals,AG-4M-900s,2.8800926208496094,15m 22s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/traffic_signals/medium-900s/hydra/config.yaml
+tiny,traffic_signals,ViT-B/16-MLP,2.9210591316223145,0m 7s,,,,2025-01-06,remote-logs/logs/pytorch/2025-01-06/traffic_signals/vitb16/vitb16_mlpr/hydra/config.yaml
+tiny,traffic_signals,AG-4M-600s,3.981271743774414,10m 22s,,,,2025-01-07,remote-logs/ag-logs/eval/2025-01-07/traffic_signals/medium-600s/hydra/config.yaml

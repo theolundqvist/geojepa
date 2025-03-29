@@ -1,0 +1,198 @@
+.PHONY: help default tiles merge split pretraining tasks split_tasks split_images clean build_h5 publish
+
+# -------------------------------------
+# Help Function
+# -------------------------------------
+help:  ## Show this help message
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
+	awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+
+# -------------------------------------
+# Default Target
+# -------------------------------------
+all: ## Execute all main tasks in sequence
+	@echo "\n1. Merging"
+	@$(MAKE) merge
+	@echo "\n2. Splitting"
+	@$(MAKE) split
+	@echo "\n3. Creating task datasets"
+	@$(MAKE) tasks
+	@echo "\n4. Processing tasks"
+	@$(MAKE) process_tasks
+	@echo "\n5. Splitting tasks"
+	@$(MAKE) split_tasks
+	@echo "\n6. Pruning task datasets"
+	@$(MAKE) prune_tasks
+	@echo "\n7. Generate stats for tasks"
+	@$(MAKE) stats_tasks
+	@echo "\n8. Generate cheat dataset for each task"
+	@$(MAKE) cheat_tasks
+
+
+build_h5: ## Build h5 dataset from a train/val/test processed split. Usage: make build_h5 task=<task-name> (relative path)
+	@if [ -z "$(task)" ]; then \
+		echo "Error: task is not set. Usage: make build_h5 task=<task-name>"; \
+		exit 1; \
+	fi
+	@rm -f $(CURDIR)/"$(task)"/*.h5
+	@PYTHONPATH=../../../ python -m {{BUILD_H5_SCRIPT}} --dataset $(notdir $(CURDIR)) --task $(task) -n $(shell nproc)
+
+
+build_h5_tasks: ## Build h5 dataset from a train/val/test processed split. Usage: make build_h5_tasks
+	@echo "Starting build_h5_all"
+	@{ \
+		for dir in $(wildcard tasks/*); do \
+			dir_name=$$(basename $$dir); \
+			echo "echo 'Starting task $$dir_name'; start=$$(date +%s); PYTHONPATH=../../../ python -m {{BUILD_H5_SCRIPT}} --dataset $(notdir $(CURDIR)) --task '$$dir_name'; end=$$(date +%s); echo 'Finished task $$dir_name in $$((end-start)) seconds'"; \
+		done; \
+		#echo "echo 'Starting images task'; start=$$(date +%s); PYTHONPATH=../../../ python -m {{BUILD_H5_SCRIPT}} --dataset $(notdir $(CURDIR)) --images; end=$$(date +%s); echo 'Finished images task in $$((end-start)) seconds'"; \
+	} | xargs -P 5 -I {} sh -c '{}' 2>&1 | tee build_h5_all.log
+
+build_h5_images: ## Build h5 dataset from a train/val/test processed split. Usage: make build_h5_all
+	PYTHONPATH=../../../ python -m {{BUILD_H5_SCRIPT}} --dataset $(notdir $(CURDIR)) --images
+
+build_h5_no_img: ## Build h5 dataset from a train/val/test processed split. Usage: make build_h5_all
+	@PYTHONPATH=../../../ python -m {{BUILD_H5_SCRIPT}} --dataset $(notdir $(CURDIR)) -n $(shell nproc)
+
+build_h5_all: ## Build h5 dataset from a train/val/test processed split. Usage: make build_h5_all
+	@echo "Starting build_h5_all"
+	@{ \
+	    echo "echo 'Starting images task'; start=$$(date +%s); PYTHONPATH=../../../ python -m {{BUILD_H5_SCRIPT}} --dataset $(notdir $(CURDIR)) --images; end=$$(date +%s); echo 'Finished images task in $$((end-start)) seconds'"; \
+		for dir in $(wildcard tasks/*); do \
+			dir_name=$$(basename $$dir); \
+			echo "echo 'Starting task $$dir_name'; start=$$(date +%s); PYTHONPATH=../../../ python -m {{BUILD_H5_SCRIPT}} --dataset $(notdir $(CURDIR)) --task '$$dir_name'; end=$$(date +%s); echo 'Finished task $$dir_name in $$((end-start)) seconds'"; \
+		done; \
+	} | xargs -P 5 -I {} sh -c '{}' 2>&1 | tee build_h5_all.log
+
+publish: ## Publish only .h5 files to S3. Usage: make publish-to-s3 dir=<task-dir>
+	@if [ -z "$(dir)" ]; then \
+		echo "Error: dir is not set. Usage: make publish-to-s3 dir=<task-dir>"; \
+		exit 1; \
+	fi
+	@echo "Uploading pretraining data to S3..."
+	#zip -r $(dir).zip $(dir) --include '$(dir)/test.h5' '$(dir)/train.h5' '$(dir)/val.h5' '$(dir)/labels.txt' '$(dir)/config.yaml' 
+	rm -f $(dir).tar.zst
+	tar -cf - \
+			"$(dir)/test.h5" \
+			"$(dir)/train.h5" \
+			"$(dir)/val.h5" \
+			"$(dir)/labels.txt" \
+			"$(dir)/config.yaml" | \
+	zstd -o "$(dir).tar.zst" -T0 -9
+	#@aws-cli s3 cp $(dir).tar.zst {{S3_BUCKET}}/data/{{DATASET_NAME}}/$(dir).tar.zst || { echo "Failed to upload $(dir).tar.zst"; exit 1; }
+	#@@echo "All data uploaded successfully."
+
+publish_images:
+	rm -rf images.h5.tar.zst && tar -cf - images.h5 | zstd -o images.h5.tar.zst -T0 -8
+
+# -------------------------------------
+# Tiles Target
+# -------------------------------------
+tiles: ## Generate unprocessed tiles using the tiling script
+	{{TILING_SCRIPT}} -i {{OSM_FILENAME}} -o unprocessed/
+
+# -------------------------------------
+# Merge Target
+# -------------------------------------
+merge: ## Merge satellite tiles and organize images
+	python {{MERGING_SCRIPT}} -sat sat_tiles -osm unprocessed -out merged/
+	mkdir -p images && mv merged/*.webp images/
+
+# -------------------------------------
+# Split Target
+# -------------------------------------
+split: ## Split merged data into smaller chunks
+	mkdir -p logs
+	python {{SPLITTING_SCRIPT}} -i merged -o split -l logs
+
+# -------------------------------------
+# Split Tasks Target
+# -------------------------------------
+split_tasks: ## Split each task directory into individual tasks
+	for dir in $(wildcard tasks/*); do \
+		mv "$$dir" "$$dir"_unsplit && \
+		python {{SPLITTING_SCRIPT}} -i "$$dir"_unsplit -l logs -o "$$dir" && \
+		cp "$$dir"_unsplit/labels.txt "$$dir"/ && \
+		cp "$$dir"_unsplit/config.yaml "$$dir"/ && \
+		rm -rf "$$dir"_unsplit; \
+	done
+
+# -------------------------------------
+# Prune Tasks Target
+# -------------------------------------
+prune_tasks: ## Prune each task directory and prepare for further usage
+	@for dir in $(wildcard tasks/*); do \
+		dir_name=$$(basename $$dir)  && \
+		PYTHONPATH=../../../ python -m {{PRUNING_SCRIPT}} -i "$$dir" -d logs -n $$dir_name; \
+	done
+
+# -------------------------------------
+# Create Cheats Target
+# -------------------------------------
+cheat_tasks: ## Prune each task directory and prepare for further usage
+	for dir in $(wildcard tasks/*); do \
+  		if [ "$$dir" != "tasks/pretraining" ]; then \
+			dir_name=$$(basename $$dir)  && \
+			if echo "$$dir_name" | grep -q "cheat"; then \
+				continue; \
+			fi; \
+			cp -r tasks/pretraining/ "$$dir"_cheat && \
+			cp "$$dir"/stats.txt "$$dir"_cheat/ && \
+			cp "$$dir"/labels.txt "$$dir"_cheat/ && \
+			PYTHONPATH=../../../ python -m {{PRUNING_SCRIPT}} -i "$$dir"_cheat -d logs -n $$dir_name; \
+		fi; \
+	done
+
+# -------------------------------------
+# Process Tasks Target
+# -------------------------------------
+process_tasks: ## Process each task directory and prepare for further usage
+	for dir in $(wildcard tasks/*); do \
+		if [ "$$dir" != "tasks/config" ]; then \
+			{{POST_PROCESS_SCRIPT}} -i "$$dir" -o "$$dir"_processed && \
+			cp "$$dir"/labels.txt "$$dir"_processed/ && \
+			cp "$$dir"/config.yaml "$$dir"_processed/ && \
+			rm -rf "$$dir" && \
+			mv "$$dir"_processed "$$dir"; \
+		fi; \
+	done
+	
+# -------------------------------------
+# Stats Tasks Target
+# -------------------------------------
+stats_tasks: ## Generate stats_file for each task in tasks directory
+	PYTHONPATH=../../../ python -m {{STATS_SCRIPT}} -i tasks && \
+	echo "Generating cooccurrence files" && \
+	{{COOCCURRENCE_SCRIPT}} -i tasks/pretraining -o cooccurrence -c ../../../data/task_generator/features-key-val.csv && \
+	echo "Generating cooccurrence pkl" && \
+	python {{COOCCURRENCE_SCRIPT_PYTHON}} -i cooccurrence --gen_pkl
+
+# -------------------------------------
+# Tasks Target
+# -------------------------------------
+tasks: ## Generate task datasets from merged data
+	{{TASK_GENERATE_SCRIPT}} -i merged -o tasks
+
+# -------------------------------------
+# Split Images Target
+# -------------------------------------
+split_images: ## Split images into PNG format with z=16
+	#[ ! -d images ] || mv images images_webp
+	{{SPLIT_IMAGES_SCRIPT}} images images_png
+
+# -------------------------------------
+# Generate Tiny Imagery Target
+# -------------------------------------
+gen_image_tasks: ## Generate small image set in each task directory
+	for dir in $(wildcard tasks/*); do \
+		dir_name=$$(basename $$dir)  && \
+		python create_task_images.py $$dir_name; \
+	done
+
+# -------------------------------------
+# Clean Target
+# -------------------------------------
+clean: ## Clean autogenerated and intermediate files
+	rm -rf split merged images pretraining images_webp images_png cooccurrence
+	find tasks -type f ! -name 'labels.txt' -delete && find tasks -type d -empty -delete
+

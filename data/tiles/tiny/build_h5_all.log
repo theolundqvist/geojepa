@@ -1,0 +1,189 @@
+Starting images task
+Starting task bridge
+Starting task bridge_cheat
+Starting task building_count
+Starting task building_count_cheat
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: bridge_cheat
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: building_count
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 0 task directories to process.
+INFO - Starting build_h5 for images.
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: bridge
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: building_count_cheat
+INFO - Writing bridge_cheat/test
+INFO - Writing building_count/test
+INFO - Writing bridge/test
+INFO - Writing train images
+INFO - Writing building_count_cheat/test
+INFO - Completed split 'test': 32 tiles in 0.58s (55.09 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/building_count/test.h5'.
+INFO - Completed split 'test': 32 tiles in 0.66s (48.17 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/bridge_cheat/test.h5'.
+INFO - Completed split 'test': 32 tiles in 0.58s (55.58 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/building_count_cheat/test.h5'.
+INFO - Completed split 'test': 32 tiles in 0.61s (52.45 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/bridge/test.h5'.
+INFO - Writing building_count/train
+INFO - Completed train images: 0 new images in 1.54s (0.00 tiles/s)
+INFO - Writing bridge_cheat/train
+INFO - Writing building_count_cheat/train
+INFO - Writing bridge/train
+INFO - Completed split 'train': 110 tiles in 1.00s (110.37 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/building_count/train.h5'.
+INFO - Writing val images
+INFO - Completed split 'train': 110 tiles in 1.69s (65.05 tiles/s)
+INFO - Completed val images: 0 new images in 0.56s (0.00 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/bridge_cheat/train.h5'.
+INFO - Completed split 'train': 110 tiles in 1.84s (59.79 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/building_count_cheat/train.h5'.
+INFO - Completed split 'train': 110 tiles in 1.80s (61.27 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/bridge/train.h5'.
+INFO - Writing building_count/val
+INFO - Completed split 'val': 16 tiles in 0.29s (55.32 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/building_count/val.h5'.
+INFO - Completed build_h5 for task: building_count in 5.07s
+INFO - All build_h5 tasks have been processed in 5.13s
+INFO - Writing bridge_cheat/val
+INFO - Writing test images
+INFO - Writing building_count_cheat/val
+INFO - Writing bridge/val
+INFO - Completed split 'val': 16 tiles in 0.48s (33.34 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/bridge_cheat/val.h5'.
+INFO - Completed build_h5 for task: bridge_cheat in 6.08s
+Finished task building_count in 0 seconds
+Starting task car_bridge
+INFO - All build_h5 tasks have been processed in 6.15s
+INFO - Completed test images: 0 new images in 0.61s (0.00 tiles/s)
+INFO - Completed build_h5 for images in 6.17s
+INFO - Completed split 'val': 16 tiles in 0.48s (33.59 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/building_count_cheat/val.h5'.
+INFO - Completed build_h5 for task: building_count_cheat in 6.21s
+INFO - All build_h5 tasks have been processed in 6.25s
+INFO - Completed split 'val': 16 tiles in 0.52s (30.94 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/bridge/val.h5'.
+INFO - Completed build_h5 for task: bridge in 6.28s
+INFO - All build_h5 tasks have been processed in 6.28s
+INFO - All build_h5 tasks have been processed in 6.36s
+Finished task bridge_cheat in 0 seconds
+Starting task car_bridge_cheat
+Finished images task in 0 seconds
+Starting task max_speed
+Finished task building_count_cheat in 0 seconds
+Starting task max_speed_cheat
+Finished task bridge in 0 seconds
+Starting task pretraining
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: car_bridge
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: car_bridge_cheat
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: max_speed
+INFO - Writing car_bridge/test
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: max_speed_cheat
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: pretraining
+INFO - Completed split 'test': 32 tiles in 0.55s (58.26 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/car_bridge/test.h5'.
+INFO - Writing car_bridge_cheat/test
+INFO - Writing max_speed/test
+INFO - Writing max_speed_cheat/test
+INFO - Writing pretraining/test
+INFO - Completed split 'test': 32 tiles in 0.60s (53.43 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/car_bridge_cheat/test.h5'.
+INFO - Completed split 'test': 32 tiles in 0.56s (56.77 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/max_speed/test.h5'.
+INFO - Completed split 'test': 32 tiles in 0.51s (62.42 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/pretraining/test.h5'.
+INFO - Completed split 'test': 32 tiles in 0.56s (57.12 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/max_speed_cheat/test.h5'.
+INFO - Writing car_bridge/train
+INFO - Writing car_bridge_cheat/train
+INFO - Writing max_speed/train
+INFO - Writing pretraining/train
+INFO - Writing max_speed_cheat/train
+INFO - Completed split 'train': 110 tiles in 1.79s (61.41 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/car_bridge/train.h5'.
+INFO - Completed split 'train': 110 tiles in 1.81s (60.69 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/car_bridge_cheat/train.h5'.
+INFO - Completed split 'train': 110 tiles in 1.80s (61.18 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/max_speed/train.h5'.
+INFO - Completed split 'train': 110 tiles in 1.78s (61.70 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/pretraining/train.h5'.
+INFO - Completed split 'train': 110 tiles in 1.67s (65.74 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/max_speed_cheat/train.h5'.
+INFO - Writing car_bridge/val
+INFO - Completed split 'val': 16 tiles in 0.42s (38.18 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/car_bridge/val.h5'.
+INFO - Completed build_h5 for task: car_bridge in 5.99s
+INFO - All build_h5 tasks have been processed in 6.06s
+INFO - Writing car_bridge_cheat/val
+INFO - Writing max_speed/val
+INFO - Writing pretraining/val
+INFO - Writing max_speed_cheat/val
+INFO - Completed split 'val': 16 tiles in 0.51s (31.33 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/car_bridge_cheat/val.h5'.
+INFO - Completed build_h5 for task: car_bridge_cheat in 6.19s
+Finished task car_bridge in 0 seconds
+Starting task traffic_signals
+INFO - All build_h5 tasks have been processed in 6.27s
+INFO - Completed split 'val': 16 tiles in 0.54s (29.90 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/max_speed/val.h5'.
+INFO - Completed build_h5 for task: max_speed in 6.18s
+INFO - All build_h5 tasks have been processed in 6.26s
+INFO - Completed split 'val': 16 tiles in 0.49s (32.45 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/pretraining/val.h5'.
+INFO - Completed build_h5 for task: pretraining in 6.18s
+INFO - Completed split 'val': 16 tiles in 0.49s (32.56 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/max_speed_cheat/val.h5'.
+INFO - Completed build_h5 for task: max_speed_cheat in 6.21s
+INFO - All build_h5 tasks have been processed in 6.26s
+INFO - All build_h5 tasks have been processed in 6.28s
+Finished task car_bridge_cheat in 0 seconds
+Starting task traffic_signals_cheat
+Finished task max_speed in 0 seconds
+Finished task pretraining in 0 seconds
+Finished task max_speed_cheat in 0 seconds
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: traffic_signals
+INFO - Starting build_h5_all with dataset_dir=/home/theo/Documents/master-thesis/geojepa/pyscripts/../data/tiles/tiny
+INFO - Discovered 1 task directories to process.
+INFO - Starting build_h5 for task: traffic_signals_cheat
+INFO - Writing traffic_signals/test
+INFO - Completed split 'test': 32 tiles in 0.47s (67.40 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/traffic_signals/test.h5'.
+INFO - Writing traffic_signals_cheat/test
+INFO - Completed split 'test': 32 tiles in 0.48s (66.73 tiles/s)
+INFO - All tiles for split 'test' have been successfully saved to 'tiny/traffic_signals_cheat/test.h5'.
+INFO - Writing traffic_signals/train
+INFO - Writing traffic_signals_cheat/train
+INFO - Completed split 'train': 110 tiles in 1.68s (65.65 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/traffic_signals/train.h5'.
+INFO - Completed split 'train': 110 tiles in 1.58s (69.56 tiles/s)
+INFO - All tiles for split 'train' have been successfully saved to 'tiny/traffic_signals_cheat/train.h5'.
+INFO - Writing traffic_signals/val
+INFO - Completed split 'val': 16 tiles in 0.40s (39.72 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/traffic_signals/val.h5'.
+INFO - Completed build_h5 for task: traffic_signals in 5.67s
+INFO - All build_h5 tasks have been processed in 5.73s
+INFO - Writing traffic_signals_cheat/val
+INFO - Completed split 'val': 16 tiles in 0.39s (40.98 tiles/s)
+INFO - All tiles for split 'val' have been successfully saved to 'tiny/traffic_signals_cheat/val.h5'.
+INFO - Completed build_h5 for task: traffic_signals_cheat in 5.59s
+Finished task traffic_signals in 0 seconds
+INFO - All build_h5 tasks have been processed in 5.65s
+Finished task traffic_signals_cheat in 0 seconds

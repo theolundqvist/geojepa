@@ -1,0 +1,33 @@
+# @package _global_
+
+defaults:
+  - override /model: tagformer_lmae
+  - override /trainer: gpu
+  - override /data: pretraining
+
+
+callbacks:
+  model_checkpoint:
+    dirpath: ${paths.output_dir}/checkpoints
+    filename: "last"
+    monitor: "val/loss"
+    mode: "min"
+    save_last: True
+    save_top_k: 0
+    every_n_epochs: 5 # number of epochs between checkpoints
+    auto_insert_metric_name: False
+
+trainer:
+  min_epochs: 0
+  max_epochs: 60
+  limit_val_batches: 0.35
+  accumulate_grad_batches: 20
+  gradient_clip_val: 10.0
+  log_every_n_steps: 64
+  devices: 1
+
+data:
+  batch_size: 10
+  group_size: 20
+  load_images: false
+  num_workers: 8

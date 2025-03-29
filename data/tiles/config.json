@@ -1,0 +1,32 @@
+{
+  "Huge": {
+    "url": "https://download.geofabrik.de/north-america/us/california-latest.osm.pbf",
+    "directory": "huge",
+    "filename": "california-latest.osm.pbf"
+  },
+  "Small": {
+    "url": "",
+    "directory": "small",
+    "filename": ""
+  },
+  "Tiny": {
+    "url": "",
+    "directory": "tiny",
+    "filename": ""
+  },
+  "old-Tiny": {
+    "url": "",
+    "directory": "old_tiny",
+    "filename": ""
+  },
+  "Medium": {
+    "url": "",
+    "directory": "medium",
+    "filename": ""
+  },
+  "Large": {
+    "url": "",
+    "directory": "large",
+    "filename": ""
+  }
+}

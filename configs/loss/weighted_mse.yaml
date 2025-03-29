@@ -1,0 +1,5 @@
+# @package _global_
+model:
+  loss:
+    _target_: src.modules.losses.WeightedMSELoss
+    zero_fraction: ${data.zero_fraction}

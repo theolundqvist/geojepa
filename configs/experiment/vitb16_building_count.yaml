@@ -1,0 +1,27 @@
+# @package _global_
+
+defaults:
+  - override /callbacks: default
+  - override /trainer: gpu
+  - override /model: tagformer
+
+seed: 12345
+
+data:
+  batch_size: 64
+
+trainer:
+  max_epochs: 15
+
+#callbacks:
+#  early_stopping:
+#    monitor: "val/loss"
+#    patience: 4
+#    mode: "min"
+
+hydra:
+  mode: MULTIRUN
+  sweeper:
+    params:
+      data: bridge,car_bridge,max_speed,traffic_signals,building_count
+      data.cheat: true,false
